@@ -3,13 +3,14 @@ TODO
 
 **Questions to clarify:**
 
-* Define platform we want to use for discussion of ZenIPs. Our existing community forum?
+* Define platform we want to use for discussion of ZenIPs. Our existing community forum? This is crucial for the efficient communication and collaboration. See Comment section (from BIP-0002)
 * Who will be the Editors?
 * Define Process from proposed ZenIP draft to merge.
 * additional criteria for rejection of ZenIP? Fewer points maybe?
 * other discussion guidelines than gnu?
 * adapt nup process?
 * which licenses do we want to require?
+* define network upgrade
 
 
 **Tasks to do:**
@@ -21,17 +22,28 @@ TODO
 Everything in **bold** font was added by Jonas.
 
 ========
-
+  
 ::
 
-  ZenIP: 0
+  ZenIP: 000
   Title: ZenIP Process
-  Owners: ???
-  Credits: Luke Dashjr, acityinohio, daira, and str4d
-  Status: Active
-  Category: Process
-  Created: 2019-02-16
-  License: BSD-2-Clause
+  Author: Jonas Rubel, <jonas@zensystem.io>
+  Status: Draft 
+  Type: Process
+  Created: 2019-08-18
+  License: MIT
+
+Table of Contents
+===========
+
+
+Terminology
+Abstract
+ZenIP Workflow
+
+
+ 
+
 
 
 Terminology
@@ -41,8 +53,7 @@ The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
 "OPTIONAL", and "REQUIRED" in this document are to be interpreted as
 described in RFC 2119. [#RFC2119]_
 
-The term "network upgrade" in this document is to be interpreted as
-described in ZenIP 200. [#ZenIP-0200]_
+The term "network upgrade" in this document is to be interpreted as **???**
 
 
 Abstract
@@ -280,7 +291,7 @@ Guidelines <https://www.gnu.org/philosophy/kind-communication.en.html>`__
 ZenIP format and structure
 ========================
 
-ZenIPs SHOULD be written either in reStructuredText [#rst]_ or LaTeX [#latex]_.
+ZenIPs SHOULD be written either in GitHub Flavored Markdown [#md]_, reStructuredText [#rst]_ or LaTeX [#latex]_.
 In the latter case, a `Makefile` MUST be provided to build (at least) a
 PDF version of the document.
 
@@ -330,27 +341,28 @@ Each ZenIP SHOULD have the following parts:
 ZenIP header preamble
 -------------------
 
-Each ZenIP must begin with an RFC 822-style header preamble. The following
-header fields are REQUIRED::
+Each BIP must begin with an RFC 822 style header preamble. The headers must appear in the following order. Headers marked with "*" are optional and are described below. All other headers are required.
 
-  ZenIP:
-  Title:
-  Owners:
-  Status:
-  Category:
-  Created:
-  License:
+::
 
-The following additional header fields are OPTIONAL::
+  ZenIP: ZenIP number, or "X" before being assigned
+  Layer*: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications **???**
+  Title: ZenIP title; maximum 44 characters
+  Author: list of authors' names and email addresses
+  Discussions-To*: email address
+  Comments-Summary*: summary tone
+  Comments-URI: **links to wiki page for comments ?**
+  Status: Draft | Active | Proposed | Deferred | Rejected |
+           Withdrawn | Final | Replaced | Obsolete
+  Type: Standards Track | Informational | Process
+  Created: date created on, in ISO 8601 (yyyy-mm-dd) format
+  License: abbreviation for approved license(s)
+  License-Code*: abbreviation for code under different approved license(s)
+  Post-History*: dates of postings to **Horizen mailing list ?**, or link to thread in mailing list archive
+  Requires*: ZenIP number(s)
+  Replaces*: ZenIP number
+  Superseded-By*: ZenIP number
 
-  Credits:
-  Original-Authors:
-  Discussions-To:
-  Network Upgrade:
-  Obsoleted by:
-  Updated by:
-  Obsoletes:
-  Updates:
 
 The Owners header lists the names and email addresses of all the
 Owners of the ZenIP. The format of the Owners header value SHOULD be::
@@ -378,7 +390,9 @@ Auxiliary Files
 ZenIPs may include auxiliary files such as diagrams. Auxiliary files
 should be included in a subdirectory for that ZenIP; that is, for any ZenIP
 that requires more than one file, all of the files SHOULD be in a
-subdirectory named ZenIP-XXXX.
+subdirectory named ZenIP-XXX.
+
+Auxiliary files should be MUST be named ZenIP-XXX-Y.ext, where "XXX" is the ZenIP number, "Y" is a serial number (starting at 1), and "ext" is replaced by the actual file extension (e.g. "png").
 
 
 ZenIP categories
@@ -450,13 +464,16 @@ More details on the status workflow in the section below.
 Specification
 -------------
 
+**add simple graphic similar to example below**
+
+.. image:: ZenIP-000/ZenIP-000-1.png
+
 Owners of a ZenIP may decide on their own to change the status between
 Draft or Withdrawn.
 
 A ZenIP may only change status from Draft (or Rejected) to Proposed, when
 the Owner deems it is complete and there is rough consensus on the
-forums, validated by both the Electric Coin Company and Horizen Foundation
-Editors. One Editor will not suffice -- there needs to be consensus
+forums, validated by **the Editors**. One Editor will not suffice -- there needs to be consensus
 among the Editors. 
 
 **NUP Process also interesting for Horizen?**
@@ -627,6 +644,7 @@ References
 .. [#RFC2119] `Key words for use in RFCs to Indicate Requirement Levels <https://tools.ietf.org/html/rfc2119>`_
 .. [#ZenIP-0200] `ZenIP 200: Network Upgrade Activation Mechanism <https://github.com/Horizen/ZenIPs/blob/master/ZenIP-0200.rst>`_
 .. [#conduct] `Horizen Code of Conduct <https://github.com/Horizen/Horizen/blob/master/code_of_conduct.md>`_
+.. [#md] _`GitHub Flavored Markdown <https://github.github.com/gfm/>`_
 .. [#rst] `reStructuredText documentation <http://docutils.sourceforge.net/rst.html>`_
 .. [#latex] `LaTeX -- a document preparation system <https://www.latex-project.org/>`_
 
