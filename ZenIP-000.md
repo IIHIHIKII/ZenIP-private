@@ -49,7 +49,6 @@ Everything in **bold** font was added by Jonas.
       * [ZenIP Status Field](#zenip-status-field)
       * [ZenIP Comments](#zenip-comments)
       * [ZenIP Licensing](#zenip-licensing)
-   * [Tests](#tests)
 <!--te-->
 
 
@@ -57,7 +56,7 @@ Everything in **bold** font was added by Jonas.
 
 The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
 "OPTIONAL", and "REQUIRED" in this document are to be interpreted as
-described in RFC 2119. [^1]
+described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
 The term "network upgrade" in this document is to be interpreted as
 **???**
@@ -83,8 +82,7 @@ feature proposal.
 This document is based on the work done by acityinohio, daira, and str4d
 with [zip-0000](https://github.com/zcash/zips/blob/master/zip-0000.rst).
 They themselves based their document partly on the work done by Luke
-Dashjr with [BIP
-2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki).
+Dashjr with [BIP2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki).
 
 ## ZenIP Workflow
 
@@ -290,8 +288,8 @@ Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
 
 ### ZenIP format and structure
 
-ZenIPs SHOULD be written either in GitHub Flavored Markdown [^2],
-reStructuredText [^3] or LaTeX [^4]. In the latter case, a Makefile MUST
+ZenIPs SHOULD be written either in [GitHub Flavored Markdown](https://github.github.com/gfm/),
+[reStructuredText](http://docutils.sourceforge.net/rst.html) or [LaTeX](https://www.latex-project.org/). In the latter case, a Makefile MUST
 be provided to build (at least) a PDF version of the document.
 
 Each ZenIP SHOULD have the following parts:
@@ -321,8 +319,7 @@ Each ZenIP SHOULD have the following parts:
 -   Security and privacy considerations -- If applicable, security and
     privacy considerations should be explicitly described, particularly
     if the ZenIP makes explicit trade-offs or assumptions. For guidance
-    on this section consider [RFC
-    3552](https://tools.ietf.org/html/rfc3552). as a starting point.
+    on this section consider [RFC3552](https://tools.ietf.org/html/rfc3552) as a starting point.
     **REPLACE LINK?**
 -   Reference implementation -- Literal code implementing the ZenIP's
     specification, and/or a link to the reference implementation of the
@@ -333,7 +330,7 @@ Each ZenIP SHOULD have the following parts:
 
 #### ZenIP header preamble
 
-Each BIP must begin with an RFC 822 style header preamble. The headers
+Each BIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble. The headers
 must appear in the following order. Headers marked with "\*" are
 optional and are described below. All other headers are required.
 
@@ -500,8 +497,8 @@ the optional Updated-by header).
 
 ### ZenIP Comments
 
-Comments from the community on the ZenIP should occur on the Horizen
-Community Forum **ADD LINK** and the comment fields of the pull requests
+Comments from the community on the ZenIP should occur on the [Horizen
+Community Forum](https://forum.horizen.global) and the comment fields of the pull requests
 in any open ZenIPs. Editors will use these sources to judge rough
 consensus.
 
@@ -582,7 +579,6 @@ All licenses not explicitly included in the above lists are not
 acceptable terms for a Horizen Improvement Proposal.
 
 
-
 See Also
 ========
 
@@ -596,13 +592,13 @@ See Also
 References
 ==========
 
-[^1]: [Key words for use in RFCs to Indicate Requirement
+[1]: [Key words for use in RFCs to Indicate Requirement
     Levels](https://tools.ietf.org/html/rfc2119)
 
-[^2]: \_[GitHub Flavored Markdown](https://github.github.com/gfm/)
+[2]: \_[GitHub Flavored Markdown](https://github.github.com/gfm/)
 
-[^3]: [reStructuredText
+[3]: [reStructuredText
     documentation](http://docutils.sourceforge.net/rst.html)
 
-[^4]: [LaTeX -- a document preparation
+[4]: [LaTeX -- a document preparation
     system](https://www.latex-project.org/)
