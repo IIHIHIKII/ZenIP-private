@@ -25,6 +25,8 @@ Everything in **bold** font was added by Jonas.
 
 * * * * *
 
+# ZenIP-000
+
     ZenIP: 000
     Title: ZenIP Process
     Author: Jonas Rubel, <jonas@zensystem.io>
@@ -33,9 +35,22 @@ Everything in **bold** font was added by Jonas.
     Created: 2019-08-18
     License: MIT
 
-Table of Contents ===========
+## Table of Contents
 
-Terminology Abstract ZenIP Workflow
+<!--ts-->
+   * [Terminology](#terminology)
+   * [Abstract](#abstract)
+   * [ZenIP Workflow](#zenip-workflow)
+      * [Transferring ZenIP Ownership](#transferring-zenip-ownership)
+      * [ZenIP Editors](#zenip-editors)
+      * [ZenIP Editor Responsibilities and Workflow](#zenip-editor-responsibilities-and-workflow)
+      * [ZenIP Format and Structure](#zenip-format-and-structure)
+      * [ZenIP Categories](#zenip-categories)
+      * [ZenIP Status Field](#zenip-status-field)
+      * [ZenIP Comments](#zenip-comments)
+      * [ZenIP Licensing](#zenip-licensing)
+   * [Tests](#tests)
+<!--te-->
 
 
 ## Terminology
@@ -183,7 +198,7 @@ Editors: one from the Electric Coin Company and one from the Horizen
 Foundation. Additional Editors may be selected by consensus among the
 current Editors.*
 
-### ZenIP Editor Responsibilities & Workflow
+### ZenIP Editor Responsibilities and Workflow
 
 The ZenIP Editors subscribe to the [Horizen Community
 Forum.](https://forum.horizen.global) **Choose Platform, see above**
@@ -523,8 +538,7 @@ terms, and MAY also be licensed under unacceptable licenses *in addition
 to* at least one acceptable license. In this case, only the acceptable
 license(s) should be listed in the License header.
 
-Recommended Licenses
---------------------
+#### Recommended Licenses
 
 -   MIT: [Expat/MIT/X11 license](https://opensource.org/licenses/MIT)
 -   BSD-2-Clause: [OSI-approved BSD 2-clause
@@ -544,8 +558,7 @@ modifies. For example, literal code intended for Horizend would ideally
 be dual-licensed under the MIT license terms as well as one of the above
 with the rest of the ZenIP text.
 
-Not recommended, but acceptable licenses
-----------------------------------------
+#### Not recommended, but acceptable licenses
 
 -   BSL-1.0: [Boost Software License, version
     1.0](http://www.boost.org/LICENSE_1_0.txt)
@@ -562,22 +575,13 @@ Not recommended, but acceptable licenses
 -   LGPL-2.1+: [GNU Lesser General Public License (LGPL), version 2.1 or
     newer](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)
 
-Not acceptable licenses
------------------------
+#### Not acceptable licenses
+
 
 All licenses not explicitly included in the above lists are not
 acceptable terms for a Horizen Improvement Proposal.
 
-Rationale
----------
 
-Why are there software licenses included?
-
--   Some ZenIPs, especially in the Consensus category, may include
-    literal code in the ZenIP itself which may not be available under
-    the exact license terms of the ZenIP.
--   Despite this, not all software licenses would be acceptable for
-    content included in ZenIPs.
 
 See Also
 ========
