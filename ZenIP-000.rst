@@ -22,6 +22,27 @@ described in RFC 2119. [#RFC2119]_
 The term "network upgrade" in this document is to be interpreted as
 described in ZenIP 200. [#ZenIP-0200]_
 
+TODO
+========
+
+Questions to clarify:
+
+* Define platform we want to use for discussion of ZenIPs. Our existing community forum?
+* Who will be the Editors?
+* Define Process from proposed ZenIP draft to merge.
+* additional criteria for rejection of ZenIP? Fewer points maybe?
+* other discussion guidelines than gnu?
+* adapt nup process?
+* which licenses do we want to require?
+
+
+Tasks to do:
+
+* ZenIP Repo
+* setup ZenIP related email address
+
+
+
 
 Abstract
 ========
