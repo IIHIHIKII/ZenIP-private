@@ -37,8 +37,8 @@ Table of Contents ===========
 
 Terminology Abstract ZenIP Workflow
 
-Terminology
-===========
+
+## Terminology
 
 The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
 "OPTIONAL", and "REQUIRED" in this document are to be interpreted as
@@ -47,8 +47,7 @@ described in RFC 2119. [^1]
 The term "network upgrade" in this document is to be interpreted as
 **???**
 
-Abstract
-========
+## Abstract
 
 A Horizen Improvement Proposal (ZenIP) is a design document providing
 information to the Horizen community, or describing a new feature for
@@ -72,7 +71,7 @@ They themselves based their document partly on the work done by Luke
 Dashjr with [BIP
 2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki).
 
-ZenIP Workflow ============
+## ZenIP Workflow
 
 The ZenIP process begins with a new idea for Horizen. Each potential
 ZenIP must have a Owner -- someone who writes the ZenIP using the style
@@ -85,7 +84,7 @@ these don't need a ZenIP and should be injected into the relevant
 project-specific development workflow with a patch submission to the
 applicable issue tracker.
 
-**See our GitHub Process for more information**
+**Include Link: See our GitHub Process for more information**
 
 Additionally, many ideas have been brought forward for changing Horizen
 that have been rejected for various reasons. The first step should be to
@@ -149,7 +148,7 @@ The ZenIP Owner may update the draft as necessary in the git repository.
 Updates to drafts should also be submitted by the Owner as pull
 requests.
 
-Transferring ZenIP Ownership --------------------------
+### Transferring ZenIP Ownership
 
 It occasionally becomes necessary to transfer ownership of ZenIPs to a
 new Owner. In general, we'd like to retain the original Owner as a
@@ -172,7 +171,7 @@ If an author of a ZenIP is no longer an Owner, an Original-Authors field
 SHOULD be added to the ZenIP metadata indicating the original
 authorship, unless the original author(s) request otherwise.
 
-ZenIP Editors -----------
+### ZenIP Editors
 
 **TODO**
 
@@ -184,13 +183,10 @@ Editors: one from the Electric Coin Company and one from the Horizen
 Foundation. Additional Editors may be selected by consensus among the
 current Editors.*
 
-ZenIP Editor Responsibilities & Workflow
---------------------------------------
-
-**Choose Platform, see above**
+### ZenIP Editor Responsibilities & Workflow
 
 The ZenIP Editors subscribe to the [Horizen Community
-Forum.](https://forum.horizen.global)
+Forum.](https://forum.horizen.global) **Choose Platform, see above**
 
 For each new ZenIP that comes in an Editor confirms the following:
 
@@ -277,7 +273,7 @@ link** . All communications should abide by the Horizen Code of Conduct
 **LINK** and follow [the GNU Kind Communication
 Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
 
-ZenIP format and structure ========================
+### ZenIP format and structure
 
 ZenIPs SHOULD be written either in GitHub Flavored Markdown [^2],
 reStructuredText [^3] or LaTeX [^4]. In the latter case, a Makefile MUST
@@ -320,7 +316,7 @@ Each ZenIP SHOULD have the following parts:
     but it generally need not be completed before the ZenIP is accepted
     into “Proposed”.
 
-ZenIP header preamble -------------------
+#### ZenIP header preamble
 
 Each BIP must begin with an RFC 822 style header preamble. The headers
 must appear in the following order. Headers marked with "\*" are
@@ -364,8 +360,7 @@ Track, Informational, or Process.
 The Created header records the date that the ZenIP was submitted. Dates
 should be in yyyy-mm-dd format, e.g. 2001-08-14.
 
-Auxiliary Files
----------------
+#### Auxiliary Files
 
 ZenIPs may include auxiliary files such as diagrams. Auxiliary files
 should be included in a subdirectory for that ZenIP; that is, for any
@@ -376,7 +371,7 @@ Auxiliary files should be MUST be named ZenIP-XXX-Y.ext, where "XXX" is
 the ZenIP number, "Y" is a serial number (starting at 1), and "ext" is
 replaced by the actual file extension (e.g. "png").
 
-ZenIP categories ==============
+### ZenIP Categories
 
 There are several kinds of ZenIP:
 
@@ -408,7 +403,7 @@ document and a reference implementation.
 
 New categories may be added by consensus among the ZenIP Editors.
 
-ZenIP Status Field ================
+### ZenIP Status Field
 
 -   Draft: All initial ZenIP submissions have this status.
 -   Withdrawn: If the Owner decides to remove the ZenIP from
@@ -433,8 +428,7 @@ ZenIP Status Field ================
 
 More details on the status workflow in the section below.
 
-Specification
--------------
+#### Specification
 
 **add simple graphic similar to example below**
 
@@ -489,14 +483,14 @@ and/or discussed. Final ZenIPs may be updated; the specification is
 still in force but modified by another specified ZenIP or ZenIPs (check
 the optional Updated-by header).
 
-ZenIP Comments ============
+### ZenIP Comments
 
 Comments from the community on the ZenIP should occur on the Horizen
 Community Forum **ADD LINK** and the comment fields of the pull requests
 in any open ZenIPs. Editors will use these sources to judge rough
 consensus.
 
-ZenIP licensing =============
+### ZenIP Licensing
 
 **TODO**
 
@@ -529,7 +523,7 @@ terms, and MAY also be licensed under unacceptable licenses *in addition
 to* at least one acceptable license. In this case, only the acceptable
 license(s) should be listed in the License header.
 
-Recommended licenses
+Recommended Licenses
 --------------------
 
 -   MIT: [Expat/MIT/X11 license](https://opensource.org/licenses/MIT)
@@ -576,17 +570,6 @@ acceptable terms for a Horizen Improvement Proposal.
 
 Rationale
 ---------
-
-Bitcoin's BIP 1 allowed the Open Publication License or releasing into
-the public domain; was this insufficient?
-
--   The OPL is generally regarded as obsolete, and not a license
-    suitable for new publications.
--   The OPL license terms allowed for the author to prevent publication
-    and derived works, which was widely considered inappropriate.
--   In some jurisdictions, releasing a work to the public domain is not
-    recognised as a legitimate legal action, leaving the ZenIP simply
-    copyrighted with no redistribution or modification allowed at all.
 
 Why are there software licenses included?
 
