@@ -37,25 +37,34 @@ Everything in the following document written in **bold** font was added/annotate
 ## Table of Contents
 
 <!--ts-->
-  * [Terminology](#terminology)
-  * [Abstract](#abstract)
-  * [ZenIP Workflow](#zenip-workflow)
-    + [Transferring ZenIP Ownership](#transferring-zenip-ownership)
-    + [ZenIP Editors](#zenip-editors)
-    + [ZenIP Editor Responsibilities and Workflow](#zenip-editor-responsibilities-and-workflow)
-    + [ZenIP Format and Structure](#zenip-format-and-structure)
-      - [ZenIP Header Preamble](#zenip-header-preamble)
-      - [Auxiliary Files](#auxiliary-files)
-    + [ZenIP Categories](#zenip-categories)
-    + [ZenIP Status Field](#zenip-status-field)
-      - [Specification](#specification)
-    + [ZenIP Comments](#zenip-comments)
-      - [Zcash Version](#zcash-version)
-      - [Bitcoin Version](#bitcoin-version)
-    + [ZenIP Licensing](#zenip-licensing)
-      - [Recommended Licenses](#recommended-licenses)
-      - [Not recommended, but acceptable licenses](#not-recommended--but-acceptable-licenses)
-      - [Not acceptable licenses](#not-acceptable-licenses)
+- [Terminology](#terminology)
+- [Abstract](#abstract)
+- [Copyright](#copyright)
+- [Motivation](#motivation)
+- [ZenIP Workflow](#zenip-workflow)
+  * [Transferring ZenIP Ownership](#transferring-zenip-ownership)
+  * [ZenIP Editors](#zenip-editors)
+  * [ZenIP Editor Responsibilities and Workflow](#zenip-editor-responsibilities-and-workflow)
+    + [Reasons for Rejection of ZenIPs](#reasons-for-rejection-of-zenips)
+- [ZenIP Format and Structure](#zenip-format-and-structure)
+  * [Specification](#specification)
+    + [ZenIP Header Preamble](#zenip-header-preamble)
+    + [Auxiliary Files](#auxiliary-files)
+- [ZenIP Types](#zenip-types)
+- [ZenIP Status Field](#zenip-status-field)
+  * [Specification](#specification-1)
+  * [Rationale](#rationale)
+- [ZenIP Comments](#zenip-comments)
+  * [Specification](#specification-2)
+    + [Zcash Version](#zcash-version)
+    + [Bitcoin Version](#bitcoin-version)
+  * [Rationale](#rationale-1)
+- [ZenIP Licensing](#zenip-licensing)
+  * [Specification](#specification-3)
+    + [Recommended Licenses](#recommended-licenses)
+    + [Not recommended, but acceptable licenses](#not-recommended--but-acceptable-licenses)
+    + [Not acceptable licenses](#not-acceptable-licenses)
+  * [Rationale](#rationale-2)
 - [See Also](#see-also)
 - [References](#references)
 <!--te-->
@@ -92,6 +101,15 @@ This document is based on the work done by acityinohio, daira, and str4d
 with [zip-0000](https://github.com/zcash/zips/blob/master/zip-0000.rst).
 They themselves based their document partly on the work done by Luke
 Dashjr with [BIP2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki).
+
+## Copyright
+
+This ZenIP is dual-licensed under the Open Publication License and BSD 2-clause license.
+**Which license?**
+
+## Motivation
+
+**todo**
 
 ## ZenIP Workflow
 
@@ -238,6 +256,8 @@ The ZenIP Editors will:
 The ZenIP editors monitor ZenIP changes and update ZenIP headers as
 appropriate.
 
+#### Reasons for Rejection of ZenIPs
+
 The ZenIP Editors MAY reject a proposed ZenIP or update to an existing
 ZenIP for any of the following reasons:
 
@@ -295,7 +315,9 @@ link** . All communications should abide by the Horizen Code of Conduct
 **LINK** and follow [the GNU Kind Communication
 Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
 
-### ZenIP Format and Structure
+## ZenIP Format and Structure
+
+### Specification
 
 ZenIPs SHOULD be written either in [GitHub Flavored Markdown](https://github.github.com/gfm/),
 [reStructuredText](http://docutils.sourceforge.net/rst.html) or [LaTeX](https://www.latex-project.org/). In the latter case, a Makefile MUST
@@ -392,9 +414,9 @@ Auxiliary files should be MUST be named ZenIP-XXX-Y.ext, where "XXX" is
 the ZenIP number, "Y" is a serial number (starting at 1), and "ext" is
 replaced by the actual file extension (e.g. "png").
 
-### ZenIP Categories
+## ZenIP Types
 
-There are several kinds of ZenIP:
+There are several types of ZenIP:
 
 -   A Consensus ZenIP describes a change that affects the consensus
     protocol followed by all Horizen implementations.
@@ -424,7 +446,7 @@ document and a reference implementation.
 
 New categories may be added by consensus among the ZenIP Editors.
 
-### ZenIP Status Field
+## ZenIP Status Field
 
 -   Draft: All initial ZenIP submissions have this status.
 -   Withdrawn: If the Owner decides to remove the ZenIP from
@@ -449,7 +471,7 @@ New categories may be added by consensus among the ZenIP Editors.
 
 More details on the status workflow in the section below.
 
-#### Specification
+### Specification
 
 **add simple graphic similar to example below**
 
@@ -504,9 +526,15 @@ and/or discussed. Final ZenIPs may be updated; the specification is
 still in force but modified by another specified ZenIP or ZenIPs (check
 the optional Updated-by header).
 
-### ZenIP Comments
+### Rationale
+
+**todo**
+
+## ZenIP Comments
 
 **Which one???**
+
+### Specification
 
 #### Zcash Version
 Comments from the community on the ZenIP should occur on the [Horizen
@@ -546,9 +574,18 @@ These fields must follow the "Discussions-To" header defined in [ZenIP Format an
 
 To avoid doubt: comments and status are unrelated metrics to judge a ZenIP, and neither should be directly influencing the other.
 
-### ZenIP Licensing
+### Rationale
+
+**todo**
+
+
+
+
+## ZenIP Licensing
 
 **TODO**
+
+### Specification
 
 New ZenIPs may be accepted with the following licenses. Each new ZenIP
 MUST identify at least one acceptable license in its preamble. Each
@@ -622,9 +659,10 @@ with the rest of the ZenIP text.
 All licenses not explicitly included in the above lists are not
 acceptable terms for a Horizen Improvement Proposal.
 
+### Rationale
 
-See Also
-========
+
+## See Also
 
 -   [The GNU Kind Communication
     Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
@@ -633,8 +671,7 @@ See Also
 -   [Horizen Network Upgrade
     Pipeline](https://electriccoin.co/blog/the-Horizen-network-upgrade-pipeline/)
 
-References
-==========
+## References
 
 [1]: [Key words for use in RFCs to Indicate Requirement
     Levels](https://tools.ietf.org/html/rfc2119)
