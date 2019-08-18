@@ -37,17 +37,27 @@ Everything in the following document written in **bold** font was added/annotate
 ## Table of Contents
 
 <!--ts-->
-   * [Terminology](#terminology)
-   * [Abstract](#abstract)
-   * [ZenIP Workflow](#zenip-workflow)
-      * [Transferring ZenIP Ownership](#transferring-zenip-ownership)
-      * [ZenIP Editors](#zenip-editors)
-      * [ZenIP Editor Responsibilities and Workflow](#zenip-editor-responsibilities-and-workflow)
-      * [ZenIP Format and Structure](#zenip-format-and-structure)
-      * [ZenIP Categories](#zenip-categories)
-      * [ZenIP Status Field](#zenip-status-field)
-      * [ZenIP Comments](#zenip-comments)
-      * [ZenIP Licensing](#zenip-licensing)
+  * [Terminology](#terminology)
+  * [Abstract](#abstract)
+  * [ZenIP Workflow](#zenip-workflow)
+    + [Transferring ZenIP Ownership](#transferring-zenip-ownership)
+    + [ZenIP Editors](#zenip-editors)
+    + [ZenIP Editor Responsibilities and Workflow](#zenip-editor-responsibilities-and-workflow)
+    + [ZenIP Format and Structure](#zenip-format-and-structure)
+      - [ZenIP Header Preamble](#zenip-header-preamble)
+      - [Auxiliary Files](#auxiliary-files)
+    + [ZenIP Categories](#zenip-categories)
+    + [ZenIP Status Field](#zenip-status-field)
+      - [Specification](#specification)
+    + [ZenIP Comments](#zenip-comments)
+      - [Zcash Version](#zcash-version)
+      - [Bitcoin Version](#bitcoin-version)
+    + [ZenIP Licensing](#zenip-licensing)
+      - [Recommended Licenses](#recommended-licenses)
+      - [Not recommended, but acceptable licenses](#not-recommended--but-acceptable-licenses)
+      - [Not acceptable licenses](#not-acceptable-licenses)
+- [See Also](#see-also)
+- [References](#references)
 <!--te-->
 
 
