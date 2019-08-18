@@ -1,7 +1,7 @@
 TODO
 ========
 
-Questions to clarify:
+**Questions to clarify:**
 
 * Define platform we want to use for discussion of ZenIPs. Our existing community forum?
 * Who will be the Editors?
@@ -12,11 +12,13 @@ Questions to clarify:
 * which licenses do we want to require?
 
 
-Tasks to do:
+**Tasks to do:**
 
 * ZenIP Repo
 * setup ZenIP related email address
 * Once all questions are answered, maybe do a bit of rewriting so it's not entirely copy-pasted from zcash.
+
+Everything in **bold** font was added by Jonas.
 
 ========
 
