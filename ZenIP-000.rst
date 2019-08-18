@@ -1,27 +1,3 @@
-::
-
-  ZenIP: 0
-  Title: ZenIP Process
-  Owners: ???
-  Credits: Luke Dashjr, acityinohio, daira, and str4d
-  Status: Active
-  Category: Process
-  Created: 2019-02-16
-  License: BSD-2-Clause
-
-
-Terminology
-===========
-
-**TODO**
-
-The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
-"OPTIONAL", and "REQUIRED" in this document are to be interpreted as
-described in RFC 2119. [#RFC2119]_
-
-The term "network upgrade" in this document is to be interpreted as
-described in ZenIP 200. [#ZenIP-0200]_
-
 TODO
 ========
 
@@ -40,8 +16,31 @@ Tasks to do:
 
 * ZenIP Repo
 * setup ZenIP related email address
+* Once all questions are answered, maybe do a bit of rewriting so it's not entirely copy-pasted from zcash.
+
+========
+
+::
+
+  ZenIP: 0
+  Title: ZenIP Process
+  Owners: ???
+  Credits: Luke Dashjr, acityinohio, daira, and str4d
+  Status: Active
+  Category: Process
+  Created: 2019-02-16
+  License: BSD-2-Clause
 
 
+Terminology
+===========
+
+The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
+"OPTIONAL", and "REQUIRED" in this document are to be interpreted as
+described in RFC 2119. [#RFC2119]_
+
+The term "network upgrade" in this document is to be interpreted as
+described in ZenIP 200. [#ZenIP-0200]_
 
 
 Abstract
