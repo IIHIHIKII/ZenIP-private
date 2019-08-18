@@ -286,7 +286,7 @@ link** . All communications should abide by the Horizen Code of Conduct
 **LINK** and follow [the GNU Kind Communication
 Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
 
-### ZenIP format and structure
+### ZenIP Format and Structure
 
 ZenIPs SHOULD be written either in [GitHub Flavored Markdown](https://github.github.com/gfm/),
 [reStructuredText](http://docutils.sourceforge.net/rst.html) or [LaTeX](https://www.latex-project.org/). In the latter case, a Makefile MUST
@@ -328,29 +328,29 @@ Each ZenIP SHOULD have the following parts:
     but it generally need not be completed before the ZenIP is accepted
     into “Proposed”.
 
-#### ZenIP header preamble
+#### ZenIP Header Preamble
 
 Each BIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble. The headers
-must appear in the following order. Headers marked with "\*" are
+must appear in the following order. Headers marked with "(\*)" are
 optional and are described below. All other headers are required.
 
     ZenIP: ZenIP number, or "X" before being assigned
-    Layer*: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications **???**
+    (*) Layer: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications **???**
     Title: ZenIP title; maximum 44 characters
     Author: list of authors' names and email addresses
-    Discussions-To*: email address
-    Comments-Summary*: summary tone
-    Comments-URI: **links to wiki page for comments ?**
+    (*) Discussions-To: email address
+    (*) Comments-Summary: summary tone
+    Comments-URI: links to wiki page for comments?
     Status: Draft | Active | Proposed | Deferred | Rejected |
              Withdrawn | Final | Replaced | Obsolete
     Type: Standards Track | Informational | Process
     Created: date created on, in ISO 8601 (yyyy-mm-dd) format
     License: abbreviation for approved license(s)
-    License-Code*: abbreviation for code under different approved license(s)
-    Post-History*: dates of postings to **Horizen mailing list ?**, or link to thread in mailing list archive
-    Requires*: ZenIP number(s)
-    Replaces*: ZenIP number
-    Superseded-By*: ZenIP number
+    (*) License-Code: abbreviation for code under different approved license(s)
+    (*) Post-History: dates of postings to **Horizen mailing list ?**, or link to thread in mailing list archive
+    (*) Requires: ZenIP number(s)
+    (*) Replaces: ZenIP number
+    (*) Superseded-By: ZenIP number
 
 The Owners header lists the names and email addresses of all the Owners
 of the ZenIP. The format of the Owners header value SHOULD be:
@@ -497,10 +497,45 @@ the optional Updated-by header).
 
 ### ZenIP Comments
 
+**Which one???**
+
+#### Zcash Version
 Comments from the community on the ZenIP should occur on the [Horizen
 Community Forum](https://forum.horizen.global) and the comment fields of the pull requests
 in any open ZenIPs. Editors will use these sources to judge rough
 consensus.
+
+#### Bitcoin Version
+
+Each ZenIP should, in its preamble, link to a **public wiki page** with a summary tone of the comments on that page. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this **wiki page**. The comments page should generally only be used to post final comments for a completed ZenIP. If a ZenIP is not yet completed, reviewers should instead post on the applicable **development mailing list thread** to allow the ZenIP author(s) to address any concerns or problems pointed out by the review.
+
+To avoid a situation where critical ZenIP reviews may go unnoticed during this period, reviewers may, at their option, still post their review on the **comments page**, provided they first post it to the **mailing list** and plan to later remove or revise it as applicable based on the completed version. Such revisions should be made by editing the previous review and updating the timestamp. Reviews made prior to the complete version may be removed if they are no longer applicable and have not been updated in a timely manner (eg, within one month).
+
+Pages must be named after the full ZenIP number (eg, "ZenIP-000") and placed in the "Comments" namespace. For example, the link for ZenIP-000 will be https://github.com/ZencashOfficial/ZenIP/wiki/Comments:ZenIP-000 .
+
+Comments posted to this wiki should use the following format:
+
+`<Your opinion> --<Your name>, <Date of posting, as YYYY-MM-DD>`
+
+BIPs may also choose to list a second forum for BIP comments, in addition to the BIPs wiki. In this case, the second forum's URI should be listed below the primary wiki's URI.
+
+After some time, the BIP itself may be updated with a summary tone of the comments. Summary tones may be chosen from the following, but this BIP does not intend to cover all possible nuances and other summaries may be used as needed:
+
+* No comments yet.
+* Unanimously Recommended for implementation
+* Unanimously Discourage for implementation
+* Mostly Recommended for implementation, with some Discouragement
+* Mostly Discouraged for implementation, with some Recommendation
+
+For example, the preamble to BIP 1 might be updated to include the line:
+
+    Comments-Summary: No comments yet.
+    Comments-URI: ZencashOfficial/ZenIP/wiki/Comments:ZenIP-000
+                  https://some-other-wiki.org/ZenIP-000-Comments
+
+These fields must follow the "Discussions-To" header defined in [ZenIP Format and Structure](#zenip-format-and-structure) (if that header is not present, it should follow the position where it would be present; generally this is immediately above the Status header).
+
+To avoid doubt: comments and status are unrelated metrics to judge a ZenIP, and neither should be directly influencing the other.
 
 ### ZenIP Licensing
 
