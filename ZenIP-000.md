@@ -3,16 +3,15 @@ TODO
 
 **Questions to clarify:**
 
--   Define platform we want to use for discussion of ZenIPs. Our
+-   Define the platform we want to use for the discussion of ZenIPs. Our
     existing community forum? This is crucial for the efficient
-    communication and collaboration. See Comment section (from BIP-0002)
--   Who will be the Editors?
+    communication and collaboration. See [Comment section](#zenip-comments) (from BIP-0002)
+-   Who will be the [Editors](#zenip-editors)?
 -   Define Process from proposed ZenIP draft to merge.
--   additional criteria for rejection of ZenIP? Fewer points maybe?
--   other discussion guidelines than gnu?
--   adapt nup process?
--   which licenses do we want to require?
--   define network upgrade
+-   Additional criteria for rejection of ZenIP? Fewer points maybe?
+-   Other discussion guidelines than gnu?
+-   Adapt a modified version of Zcash NUP process?
+-   Which [licenses](#zenip-licensing) do we want to require?
 
 **Tasks to do:**
 
@@ -21,7 +20,7 @@ TODO
 -   Once all questions are answered, maybe do a bit of rewriting so it's
     not entirely copy-pasted from zcash.
 
-Everything in **bold** font was added by Jonas.
+Everything in the following document written in **bold** font was added/annotated by Jonas.
 
 * * * * *
 
