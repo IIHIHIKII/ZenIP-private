@@ -5,20 +5,23 @@ TODO
 
 -   Define the platform we want to use for the discussion of ZenIPs. Our
     existing community forum? This is crucial for the efficient
-    communication and collaboration. See [Comment section](#zenip-comments) (from BIP-0002)
+    communication and collaboration. See [Comment section](#zenip-comments)
+    This section should be written from scratch!
 -   Who will be the [Editors](#zenip-editors)?
--   Define Process from proposed ZenIP draft to merge.
--   Additional criteria for rejection of ZenIP? Fewer points maybe?
+-   Define [Process from proposed ZenIP draft to merge.](#specification-1)
+-   Additional criteria for rejection of ZenIP? [Fewer points maybe?](#reasons-for-rejection-of-zenips)
 -   Other discussion guidelines than gnu?
--   Adapt a modified version of Zcash NUP process?
 -   Which [licenses](#zenip-licensing) do we want to require?
+-   Adapt a modified version of Zcash NUP process?
+
 
 **Tasks to do:**
 
--   ZenIP Repo
+-   Answer questions above and adapt document accordingly
+-   Create/Merge ZenIP Repo
 -   setup ZenIP related email address
--   Once all questions are answered, maybe do a bit of rewriting so it's
-    not entirely copy-pasted from zcash.
+-   "prepare" the forum/wiki/medium of choice for ZenIP related discussions
+-   Follow through the ZenIP Process to adapt ZenIP-000, first testrun for the process suggested.
 
 Everything in the following document written in **bold** font was added/annotated by Jonas.
 
@@ -28,7 +31,7 @@ Everything in the following document written in **bold** font was added/annotate
 
     ZenIP: 000
     Title: ZenIP Process
-    Author: Jonas Rubel, <jonas@zensystem.io>
+    Owners: Jonas Rubel, <jonas@zensystem.io>
     Status: Draft 
     Type: Process
     Created: 2019-08-18
@@ -109,7 +112,9 @@ This ZenIP is dual-licensed under the Open Publication License and BSD 2-clause 
 
 ## Motivation
 
-**todo**
+It has been the stated goal of Horizen from the very beginning to build a decentralized platform, where not just the infrastructure is distributed, but also the funding and decision making. Part of the Horizen block subsidy goes to the Zen Blockchain Foundation treasury (at the time of writing - block 571074 - 20%), from where it get's distributed to fund the development of the protocol, the sidechain implementation, marketing as well as business development.
+
+The ZenIP process will be an important step towards a decentralized decision making process for the Horizen ecosystem. Improvement Proposal processes have proven to work well for decentralized blockchain projects, hence it should be the best way to distribute influence and power towards the broader community of open source contributors and stakeholders. 
 
 ## ZenIP Workflow
 
@@ -291,9 +296,6 @@ ZenIP for any of the following reasons:
 -   it updates a Released ZenIP to Draft when the specification is already
     implemented and has been in common use;
 -   it violates any specific "MUST" or "MUST NOT" rule in this document;
--   the expressed political views of a Owner of the document are inimical
-    to the Horizen Code of Conduct
-    **link** (except in the case of an update removing that Owner);
 -   it is not authorized by the stated ZenIP Owners;
 -   it removes an Owner without their consent (unless the reason for removal
     is directly related to a breach of the Code of Conduct by that Owner).
@@ -351,7 +353,6 @@ Each ZenIP SHOULD have the following parts:
     privacy considerations should be explicitly described, particularly
     if the ZenIP makes explicit trade-offs or assumptions. For guidance
     on this section consider [RFC3552](https://tools.ietf.org/html/rfc3552) as a starting point.
-    **REPLACE LINK?**
 -   Reference implementation -- Literal code implementing the ZenIP's
     specification, and/or a link to the reference implementation of the
     ZenIP's specification. The reference implementation must be
@@ -368,7 +369,7 @@ optional and are described below. All other headers are required.
     ZenIP: ZenIP number, or "X" before being assigned
     (*) Layer: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications **???**
     Title: ZenIP title; maximum 44 characters
-    Author: list of authors' names and email addresses
+    Owners: list of authors' names and email addresses
     (*) Discussions-To: email address
     (*) Comments-Summary: summary tone
     Comments-URI: links to wiki page for comments?
@@ -442,7 +443,8 @@ document and a reference implementation.
     Informational ZenIPs, they are more than recommendations, and users
     are typically not free to ignore them. Examples include procedures,
     guidelines, changes to the decision-making process, and changes to
-    the tools or environment used in Horizen development.
+    the tools or environment used in Horizen development. 
+    This ZenIP-000 is an example of a Process ZenIP.
 
 New categories may be added by consensus among the ZenIP Editors.
 
@@ -528,7 +530,9 @@ the optional Updated-by header).
 
 ### Rationale
 
-**todo**
+We want to define an unambiguous criteria for the Status field of BIPs, which has often been a source of confusion in similar Improvement Proposal processes. Many *X*-IPs with significant real-world use have been left as Draft or Proposed status longer than appropriate. By giving objective criteria to judge the progression of BIPs, this proposal aims to help keep the Status accurate and up-to-date.
+
+This ZenIP does not aim to address what "should" be the basis of decisions. Such a statement, no matter how perfect in its justification, would be futile without some way to force others to use it. Opinions will always differ to some degree. The ZenIP process does not aim to be a kind of forceful "governance" of Horizen, merely to provide a collaborative repository for proposing and providing information on standards, which people may voluntarily adopt or not. It can only hope to achieve accuracy in regard to the "Status" field by striving to reflect the reality of *how things actually are*, rather than *how they should be*.
 
 ## ZenIP Comments
 
