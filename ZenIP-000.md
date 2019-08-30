@@ -487,7 +487,7 @@ when the Owner deems it is complete and there is rough consensus on the
 forums, validated by **the Editors**. One Editor will not suffice --
 there needs to be consensus among the Editors.
 
-**NUP Process also interesting for Horizen?**
+**Network Upgrade Pipeline (NUP) Process also interesting for Horizen?**
 
 *If it's a Standards Track ZenIP, upon changing status to Proposed the
 Editors will add the optional `Network Upgrade` header to the preamble,
