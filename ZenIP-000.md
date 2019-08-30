@@ -8,7 +8,7 @@ TODO
     communication and collaboration. See [Comment section](#zenip-comments)
     This section should be written from scratch!
 -   Who will be the [Editors](#zenip-editors)?
--   Define [Process from proposed ZenIP draft to merge.](#specification-1)
+-   Define [Process from proposed ZenIP draft to merge.](#specification-1) Intersection ZenIP and GitHub Process.
 -   Additional criteria for rejection of ZenIP? [Fewer points maybe?](#reasons-for-rejection-of-zenips)
 -   Other discussion guidelines than gnu?
 -   Which [licenses](#zenip-licensing) do we want to require?
