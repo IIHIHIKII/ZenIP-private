@@ -108,7 +108,7 @@ Dashjr with [BIP2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawik
 ## Copyright
 
 This ZenIP is dual-licensed under the Open Publication License and BSD 2-clause license.
-**Which license?**
+**Or MIT? Which license?**
 
 ## Motivation
 
@@ -119,7 +119,7 @@ The ZenIP process will be an important step towards a decentralized decision mak
 ## ZenIP Workflow
 
 The ZenIP process begins with a new idea for Horizen. Each potential
-ZenIP must have a Owner -- someone who writes the ZenIP using the style
+ZenIP must have an Owner -- someone who writes the ZenIP using the style
 and format described below, shepherds the discussions in the appropriate
 forums, and attempts to build community consensus around the idea. The
 ZenIP Owner should first attempt to ascertain whether the idea is
@@ -448,7 +448,7 @@ document and a reference implementation.
 
 New categories may be added by consensus among the ZenIP Editors.
 
-## ZenIP Status Field
+## ZenIP Status
 
 -   Draft: All initial ZenIP submissions have this status.
 -   Withdrawn: If the Owner decides to remove the ZenIP from
