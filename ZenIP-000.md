@@ -27,6 +27,8 @@ Everything in the following document written in **bold** font was added/annotate
 
 * * * * *
 
+![image](ZenIP-000/ZenIP-000-1.png)
+
 # ZenIP-000
 
     ZenIP: 000
@@ -79,9 +81,6 @@ The key words "MUST", "SHOULD", "SHOULD NOT", "MAY", "RECOMMENDED",
 "OPTIONAL", and "REQUIRED" in this document are to be interpreted as
 described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 
-The term "network upgrade" in this document is to be interpreted as
-**???**
-
 ## Abstract
 
 A Horizen Improvement Proposal (ZenIP) is a design document providing
@@ -114,12 +113,12 @@ This ZenIP is dual-licensed under the Open Publication License and BSD 2-clause 
 
 It has been the stated goal of Horizen from the very beginning to build a decentralized platform, where not just the infrastructure is distributed, but also the funding and decision making. Part of the Horizen block subsidy goes to the Zen Blockchain Foundation treasury (at the time of writing - block 571074 - 20%), from where it get's distributed to fund the development of the protocol, the sidechain implementation, marketing as well as business development.
 
-The ZenIP process will be an important step towards a decentralized decision making process for the Horizen ecosystem. Improvement Proposal processes have proven to work well for decentralized blockchain projects, hence it should be the best way to distribute influence and power towards the broader community of open source contributors and stakeholders. 
+The ZenIP process will be an important step towards a decentralized decision making process for the Horizen ecosystem. Improvement Proposal processes have proven to work well for decentralized blockchain projects, hence it should be the best way to distribute influence and power towards the broader community of open source contributors and stakeholders.
 
 ## ZenIP Workflow
 
 The ZenIP process begins with a new idea for Horizen. Each potential
-ZenIP must have an Owner -- someone who writes the ZenIP using the style
+ZenIP must have an Owner - someone who writes the ZenIP using the style
 and format described below, shepherds the discussions in the appropriate
 forums, and attempts to build community consensus around the idea. The
 ZenIP Owner should first attempt to ascertain whether the idea is
@@ -131,14 +130,17 @@ applicable issue tracker.
 
 **Include Link: See our GitHub Process for more information**
 
-Additionally, many ideas have been brought forward for changing Horizen
+Additionally, some ideas might have been brought forward for changing Horizen
 that have been rejected for various reasons. The first step should be to
 search past discussions to see if an idea has been considered before,
-and if so, what issues arose in its progression. After investigating
-past work, the best way to proceed is by posting about the new idea to
+and if so, what issues arose in its progression.
+
+After investigating past work, the recommended way to proceed is by creating 
+a public dicussion on (Kialo)[]
+
+posting about the new idea to
 the [Horizen Community Forum](https://forum.horizen.global/).
 
-**Which Platform do we want to use? Our Forum?"**
 
 Vetting an idea publicly before going as far as writing a ZenIP is meant
 to save both the potential Owner and the wider community time. Asking
@@ -218,15 +220,12 @@ authorship, unless the original author(s) request otherwise.
 
 ### ZenIP Editors
 
-**TODO**
-
-*The current ZenIP Editors are Daira Hopwood, representing the Electric
-Coin Company, and George Tankersley, representing the Horizen
-Foundation. Both can be reached at <ZenIPs@z.cash> . The current design
+The current ZenIP Editors are Maurizio Binello, representing the Horizen Labs Company, Peter Steward, representing the Horizen
+Community Coucil and Jonas Rubel, representing the Zen Blockchain Foundation. All can be reached at <ZenIPs@horizen.global> . The current design
 of the ZenIP Process dictates that there are always at least two ZenIP
 Editors: one from the Electric Coin Company and one from the Horizen
 Foundation. Additional Editors may be selected by consensus among the
-current Editors.*
+current Editors.
 
 ### ZenIP Editor Responsibilities and Workflow
 
@@ -443,7 +442,7 @@ document and a reference implementation.
     Informational ZenIPs, they are more than recommendations, and users
     are typically not free to ignore them. Examples include procedures,
     guidelines, changes to the decision-making process, and changes to
-    the tools or environment used in Horizen development. 
+    the tools or environment used in Horizen development.
     This ZenIP-000 is an example of a Process ZenIP.
 
 New categories may be added by consensus among the ZenIP Editors.
@@ -455,7 +454,7 @@ New categories may be added by consensus among the ZenIP Editors.
     consideration by the community, they may set the status to
     Withdrawn.
 -   Active: Typically only used for Process/Informational ZenIPs,
-    achieved once rough consensus is reached in PR/forum posts from
+    achieved once rough consensus is reached in PR/Kialo from
     Draft Process ZenIP.
 -   Proposed: Typically the stage after Draft, added to a ZenIP after
     consideration, feedback, and rough consensus from the community. The
@@ -471,29 +470,19 @@ New categories may be added by consensus among the ZenIP Editors.
 -   Obsolete: The status when a ZenIP is no longer relevant (typically
     when superseded by another ZenIP).
 
-More details on the status workflow in the section below.
+![image](ZenIP-000/ZenIP-000-2.png)
+
+More details on the status workflow in the specification below.
 
 ### Specification
-
-**add simple graphic similar to example below**
-
-![image](ZenIP-000/ZenIP-000-1.png)
 
 Owners of a ZenIP may decide on their own to change the status between
 Draft or Withdrawn.
 
 A ZenIP may only change status from Draft (or Rejected) to Proposed,
 when the Owner deems it is complete and there is rough consensus on the
-forums, validated by **the Editors**. One Editor will not suffice --
+forums, validated by [Editors](#zenip-editors). One Editor will not suffice --
 there needs to be consensus among the Editors.
-
-**Network Upgrade Pipeline (NUP) Process also interesting for Horizen?**
-
-*If it's a Standards Track ZenIP, upon changing status to Proposed the
-Editors will add the optional `Network Upgrade` header to the preamble,
-indicating the intent for the ZenIP to be implemented in the specified
-network upgrade. (All `Network Upgrade` schedules will be distributed
-via the Horizen Community Forum by the Editors.)*
 
 A Standards Track ZenIP may only change status from Proposed to
 Implemented once the Owner provides an associated reference
