@@ -12,8 +12,7 @@ TODO
 -   Additional criteria for rejection of ZenIP? [Fewer points maybe?](#reasons-for-rejection-of-zenips)
 -   Other discussion guidelines than gnu?
 -   Which [licenses](#zenip-licensing) do we want to require?
--   Adapt a modified version of Zcash NUP process?
-
+-   Specific ZenIP email address? (e.g. ZenIPs@horizen.global)
 
 **Tasks to do:**
 
@@ -128,19 +127,13 @@ these don't need a ZenIP and should be injected into the relevant
 project-specific development workflow with a patch submission to the
 applicable issue tracker.
 
-**Include Link: See our GitHub Process for more information**
-
 Additionally, some ideas might have been brought forward for changing Horizen
 that have been rejected for various reasons. The first step should be to
 search past discussions to see if an idea has been considered before,
 and if so, what issues arose in its progression.
 
-After investigating past work, the recommended way to proceed is by creating 
-a public dicussion on (Kialo)[]
-
-posting about the new idea to
-the [Horizen Community Forum](https://forum.horizen.global/).
-
+After investigating past work, the recommended way to proceed is by adding a thesis
+to the public [Horizen - ZenIP dicussion on Kialo](https://www.kialo.com). **TODO: Test how this works**
 
 Vetting an idea publicly before going as far as writing a ZenIP is meant
 to save both the potential Owner and the wider community time. Asking
@@ -154,46 +147,53 @@ areas where Horizen is used.
 
 Once the Owner has asked the Horizen community as to whether an idea has
 any chance of acceptance, a draft ZenIP should be presented to the
-[Horizen Community Forum](https://forum.horizen.global/).
+Horizen Community **TODO: Where**.
 
 This gives the Owner a chance to flesh out the draft ZenIP to make it
 properly formatted, of high quality, and to address additional concerns
 about the proposal. Following a discussion, the proposal should be
-submitted to the **ZenIP Git Repo link** as a pull request. This draft
+submitted to the **ZenIP GitHub repository (add link)** as a pull request. The draft
 must be written in ZenIP style as described below, and named with an
 alias such as `ZenIP-zentoshizenamoto-42millionzen` until the ZenIP
-Editors have assigned it a ZenIP number (Owners MUST NOT self-assign
-ZenIP numbers).
+Editors have assigned it a ZenIP number. Owners MUST NOT self-assign
+ZenIP numbers. The ZenIP repository contains a **TODO: ZenIP Template**.
 
 ZenIP Owners are responsible for collecting community feedback on both
-the initial idea and the ZenIP before submitting it for review. However,
-wherever possible, long open-ended discussions on forums should be
-avoided.
+the initial idea and the ZenIP before submitting it for review. Long open-ended discussions on forums should be
+avoided wherever possible.
 
 It is highly recommended that a single ZenIP contain a single key
 proposal or new idea. The more focused the ZenIP, the more successful it
 tends to be. If in doubt, split your ZenIP into several well-focused
 ones.
+When the ZenIP draft is complete, the ZenIP Editors will assign the
+ZenIP a number according to the [ZenIP Numbering Conventions](#zenip-numbering-conventions), label it as Consensus, Standards Track, Informational, or Process, and merge the pull request to the ZenIPs git repository.
 
-**TODO PROCESS**
+The ZenIP Editors will not unreasonably reject a ZenIP. [Reasons for the rejection of ZenIPs](#reasons-for-rejection-of-zenips) are listed
+in a dedicated section below.
+For a ZenIP to be accepted it must meet certain minimum
+criteria:
 
-*When the ZenIP draft is complete, the ZenIP Editors will assign the
-ZenIP a number, label it as Standards Track, Informational, or Process,
-and merge the pull request to the ZenIPs git repository.*
-
-The ZenIP Editors will not unreasonably reject a ZenIP. Reasons for
-rejecting ZenIPs include duplication of effort, disregard for formatting
-rules, being too unfocused or too broad, being technically unsound, not
-providing proper motivation or not in keeping with the Horizen
-philosophy. For a ZenIP to be accepted it must meet certain minimum
-criteria. It must be a clear and complete description of the proposed
-enhancement. The enhancement must represent a net improvement. The
-proposed implementation, if applicable, must be solid and must not
+- It must be a clear and complete description of the proposed
+enhancement.
+- The enhancement must represent a net improvement.
+- The proposed implementation, if applicable, must be solid and must not
 complicate the protocol unduly.
 
 The ZenIP Owner may update the draft as necessary in the git repository.
 Updates to drafts should also be submitted by the Owner as pull
 requests.
+
+### ZenIP Numbering Conventions
+
+The ZenIP Editors currently use the following conventions when numbering ZenIPs:
+
+- if a ZenIP directly corresponds to a BIP (Bitcoin Improvement Proposal) or ZIP (Zcash Improvement Proposal), and the number doesn't clash, assign the same number;
+- if it affects the consensus layer or the core protocol, assign a number in the range 200..299;
+- if it affects only higher layers but is needed for interoperability between node implementations or other parts of the ecosystem, assign a number in the range 300..399;
+- ZenIPs that should or will be deployed together will be numbered consecutively (whereever possible), and in a coherent reading order.
+
+These conventions are subject to change by consensus of the ZIP Editors.
 
 ### Transferring ZenIP Ownership
 
@@ -220,17 +220,34 @@ authorship, unless the original author(s) request otherwise.
 
 ### ZenIP Editors
 
-The current ZenIP Editors are Maurizio Binello, representing the Horizen Labs Company, Peter Steward, representing the Horizen
-Community Coucil and Jonas Rubel, representing the Zen Blockchain Foundation. All can be reached at <ZenIPs@horizen.global> . The current design
+The current ZenIP Editors are:
+
+- Maurizio Binello, representing the Horizen Labs Company
+- Peter Steward, representing the Horizen Community Coucil and
+- Jonas Rubel, representing the Zen Blockchain Foundation.
+
+All can be reached at <ZenIPs@horizen.global>. The current design
 of the ZenIP Process dictates that there are always at least two ZenIP
-Editors: one from the Electric Coin Company and one from the Horizen
-Foundation. Additional Editors may be selected by consensus among the
-current Editors.
+Editors: one from the Zen Blockchain Foundation and one from
+the Horizen Community Coucil. 
+
+### Adding and Removing Editors
+
+**TODO: define thresholds**
+
+Additional Editors may be selected by consensus among the
+current Editors. Our goal is to get benevolent organizations and institutions
+such as Universities and other non-profit organizations to participate in the
+ZenIP process as Editors. New Editors must be confirmed unanimously
+by all existing Editors.
+
+Removing an Editor must similarly be agreed upon unanimously by all Editors
+except the Editor in question.
 
 ### ZenIP Editor Responsibilities and Workflow
 
-The ZenIP Editors subscribe to the [Horizen Community
-Forum.](https://forum.horizen.global) **Choose Platform, see above**
+The ZenIP Editors subscribe to the [Horizen - ZenIP Discussion](https://forum.horizen.global)
+as well as the ZenIP git repository.
 
 For each new ZenIP that comes in an Editor confirms the following:
 
@@ -238,18 +255,18 @@ For each new ZenIP that comes in an Editor confirms the following:
     ideas must make technical sense, even if they don't seem likely to
     be accepted.
 -   The title should accurately describe the content.
--   The ZenIP draft must have been sent to the Horizen Community Forum
-    or as a PR to the **ZenIPs git repository link**
+-   The ZenIP draft must have been sent to the [Horizen - ZenIP Discussion](https://forum.horizen.global)
+    or as a PR to the ZenIP git repository.
 -   Motivation and backward compatibility (when applicable) must be
     addressed.
--   The licensing terms are acceptable for ZenIPs.
+-   The licensing terms must be acceptable for ZenIPs.
 
 If the ZenIP isn't ready, the editor will send it back to the Owner for
 revision, with specific instructions.
 
 Once the ZenIP is ready for the repository it should be submitted as a
-"pull request" to the **ZenIPs git repository link** where it may get
-further feedback. It should not contain a ZenIP number, and should be
+pull request to the ZenIPs git repository where it may get
+further feedback. It must not contain a ZenIP number, and should be
 labelled "WIP" in the pull request.
 
 The ZenIP Editors will:
@@ -265,7 +282,7 @@ appropriate.
 The ZenIP Editors MAY reject a proposed ZenIP or update to an existing
 ZenIP for any of the following reasons:
 
--   it violates the Horizen Code of Conduct **link** ;
+-   it violates the Horizen **Code of Conduct link** ;
 -   it appears too unfocused or broad;
 -   it duplicates effort in other ZenIPs without sufficient technical justification
     (however, alternative proposals to address similar or overlapping problems
@@ -277,12 +294,7 @@ ZenIP for any of the following reasons:
 -   it includes buggy code, pseudocode, or algorithms;
 -   it manifestly violates common expectations of a significant portion of the
     Horizen community;
--   it updates a Draft ZenIP to Released when there is significant community
-    opposition to its content (however, Draft ZenIPs explicitly may describe
-    proposals to which there is, or could be expected, significant community
-    opposition);
--   in the case of a Released ZenIP, the update makes a substantive change to
-    which there is significant community opposition;
+-   it contains incorrect information about its status
 -   it is dependent on a patent that could potentially be an obstacle to
     adoption of the ZenIP;
 -   it includes commercial advertising or spam;
@@ -299,8 +311,6 @@ ZenIP for any of the following reasons:
 -   it removes an Owner without their consent (unless the reason for removal
     is directly related to a breach of the Code of Conduct by that Owner).
 
-**additional criteria?**
-
 The ZenIP Editors MUST NOT unreasonably deny publication of a ZenIP
 proposal or update that does not violate any of these criteria. If they
 refuse a proposal or update, they MUST give an explanation of which of
@@ -311,18 +321,18 @@ Note that it is not the primary responsibility of the ZenIP Editors to
 review proposals for security, correctness, or implementability.
 
 Please send all ZenIP-related communications either by email to
-**address**, or by opening an issue on the **ZenIPs issue tracker +
-link** . All communications should abide by the Horizen Code of Conduct
-**LINK** and follow [the GNU Kind Communication
+<ZenIPs@horizen.global>, or by opening an issue on the **ZenIPs issue tracker link**. All communications should abide by the **Horizen Code of Conduct** and follow [the GNU Kind Communication
 Guidelines](https://www.gnu.org/philosophy/kind-communication.en.html)
 
 ## ZenIP Format and Structure
 
+One of the main purposes of this document is to define standards for how to propose protocol changes and new features.
+Below you will find a specification of acceptable ZenIPs.
+
 ### Specification
 
-ZenIPs SHOULD be written either in [GitHub Flavored Markdown](https://github.github.com/gfm/),
-[reStructuredText](http://docutils.sourceforge.net/rst.html) or [LaTeX](https://www.latex-project.org/). In the latter case, a Makefile MUST
-be provided to build (at least) a PDF version of the document.
+ZenIPs SHOULD be written either in [GitHub Flavored Markdown](https://github.github.com/gfm/) or
+[reStructuredText](http://docutils.sourceforge.net/rst.html).
 
 Each ZenIP SHOULD have the following parts:
 
