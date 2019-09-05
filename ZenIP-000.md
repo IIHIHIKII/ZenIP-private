@@ -3,14 +3,8 @@ TODO
 
 **Questions to clarify:**
 
--   Define the platform we want to use for the discussion of ZenIPs. Our
-    existing community forum? This is crucial for the efficient
-    communication and collaboration. See [Comment section](#zenip-comments)
-    This section should be written from scratch!
--   Who will be the [Editors](#zenip-editors)?
 -   Define [Process from proposed ZenIP draft to merge.](#specification-1) Intersection ZenIP and GitHub Process.
--   Additional criteria for rejection of ZenIP? [Fewer points maybe?](#reasons-for-rejection-of-zenips)
--   Other discussion guidelines than gnu?
+-   Threshold for Editor votings (adding editor, removing editor, accepting ZenIPs)
 -   Which [licenses](#zenip-licensing) do we want to require?
 -   Specific ZenIP email address? (e.g. ZenIPs@horizen.global)
 
@@ -20,22 +14,24 @@ TODO
 -   Create/Merge ZenIP Repo
 -   setup ZenIP related email address
 -   "prepare" the forum/wiki/medium of choice for ZenIP related discussions
--   Follow through the ZenIP Process to adapt ZenIP-000, first testrun for the process suggested.
+-   Follow through the ZenIP Process to adapt ZenIP-0000, first testrun for the process suggested.
 
 Everything in the following document written in **bold** font was added/annotated by Jonas.
 
 * * * * *
 
-![image](ZenIP-000/ZenIP-000-1.png)
+![image](ZenIP-0000/ZenIP-0000-1.png)
 
-# ZenIP-000
+# ZenIP-0000
 
-    ZenIP: 000
+    ZenIP: 0000
     Title: ZenIP Process
     Owners: Jonas Rubel, <jonas@zensystem.io>
+    Discussions-To: <jonas@zensystem.io>
+    Comments-URI: [Kialo ZenIP-0000 Discussion](https://www.kialo.com/invited?token=005-75a82c99-670e-4ac4-be8d-668acc9ac917)
     Status: Draft 
     Type: Process
-    Created: 2019-08-18
+    Created: 2019-09-05
     License: MIT
 
 ## Table of Contents
@@ -233,7 +229,7 @@ the Horizen Community Coucil.
 
 ### Adding and Removing Editors
 
-**TODO: define thresholds**
+**TODO: discuss thresholds**
 
 Additional Editors may be selected by consensus among the
 current Editors. Our goal is to get benevolent organizations and institutions
@@ -365,26 +361,26 @@ Each ZenIP SHOULD have the following parts:
 -   Reference implementation -- Literal code implementing the ZenIP's
     specification, and/or a link to the reference implementation of the
     ZenIP's specification. The reference implementation must be
-    completed before any ZenIP is given status “Implemented” or “Final”,
+    completed before any ZenIP is given status “Implemented”,
     but it generally need not be completed before the ZenIP is accepted
     into “Proposed”.
 
 #### ZenIP Header Preamble
 
-Each BIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble. The headers
+Each ZenIP must begin with an [RFC 822](https://www.ietf.org/rfc/rfc822.txt) style header preamble. The headers
 must appear in the following order. Headers marked with "(\*)" are
 optional and are described below. All other headers are required.
 
-    ZenIP: ZenIP number, or "X" before being assigned
-    (*) Layer: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications **???**
+    ZenIP: ZenIP number ("X" before being assigned by the Editors)
+    (*) Layer: Consensus (soft fork) | Consensus (hard fork) | Peer Services | API/RPC | Applications
     Title: ZenIP title; maximum 44 characters
     Owners: list of authors' names and email addresses
     (*) Discussions-To: email address
     (*) Comments-Summary: summary tone
-    Comments-URI: links to wiki page for comments?
-    Status: Draft | Active | Proposed | Deferred | Rejected |
-             Withdrawn | Final | Replaced | Obsolete
-    Type: Standards Track | Informational | Process
+    Comments-URI: links to Kialo page for discussion
+    Status: Draft | Active | Proposed | Rejected |
+             Withdrawn | Final | Obsolete
+    Type: Consensus | Standards Track | Informational | Process
     Created: date created on, in ISO 8601 (yyyy-mm-dd) format
     License: abbreviation for approved license(s)
     (*) License-Code: abbreviation for code under different approved license(s)
@@ -405,22 +401,18 @@ Draft phase), a Discussions-To header will indicate the URL where the
 ZenIP is being discussed. No Discussions-To header is necessary if the
 ZenIP is being discussed privately with the Owner.
 
-**TODO**
-
 The Category header specifies the type of ZenIP: Consensus, Standards
 Track, Informational, or Process.
-
-The Created header records the date that the ZenIP was submitted. Dates
-should be in yyyy-mm-dd format, e.g. 2001-08-14.
+The Created header records the date that the ZenIP was submitted.
 
 #### Auxiliary Files
 
 ZenIPs may include auxiliary files such as diagrams. Auxiliary files
 should be included in a subdirectory for that ZenIP; that is, for any
 ZenIP that requires more than one file, all of the files SHOULD be in a
-subdirectory named ZenIP-XXX.
+subdirectory named ZenIP-XXXX.
 
-Auxiliary files should be MUST be named ZenIP-XXX-Y.ext, where "XXX" is
+Auxiliary files should be MUST be named ZenIP-XXXX-Y.ext, where "XXXX" is
 the ZenIP number, "Y" is a serial number (starting at 1), and "ext" is
 replaced by the actual file extension (e.g. "png").
 
@@ -453,9 +445,9 @@ document and a reference implementation.
     are typically not free to ignore them. Examples include procedures,
     guidelines, changes to the decision-making process, and changes to
     the tools or environment used in Horizen development.
-    This ZenIP-000 is an example of a Process ZenIP.
+    This ZenIP-0000 is an example of a Process ZenIP.
 
-New categories may be added by consensus among the ZenIP Editors.
+New categories may be added by consensus (> 67%) among the ZenIP Editors.
 
 ## ZenIP Status
 
@@ -464,8 +456,8 @@ New categories may be added by consensus among the ZenIP Editors.
     consideration by the community, they may set the status to
     Withdrawn.
 -   Active: Typically only used for Process/Informational ZenIPs,
-    achieved once rough consensus is reached in PR/Kialo from
-    Draft Process ZenIP.
+    achieved once rough consensus is reached in PR/Kialo on
+    ZenIP Draft.
 -   Proposed: Typically the stage after Draft, added to a ZenIP after
     consideration, feedback, and rough consensus from the community. The
     ZenIP Editors must validate this change before it is approved.
@@ -478,28 +470,18 @@ New categories may be added by consensus among the ZenIP Editors.
 -   Final: When a Consensus or Standards Track ZenIP is both implemented
     and activated on the Horizen network.
 -   Obsolete: The status when a ZenIP is no longer relevant (typically
-    when superseded by another ZenIP).
+    when superseded or replaced by another ZenIP).
 
-![image](ZenIP-000/ZenIP-000-2.png)
+![image](ZenIP-0000/ZenIP-0000-2.png)
 
 More details on the status workflow in the specification below.
 
 ### Specification
 
-Owners of a ZenIP may decide on their own to change the status between
-Draft or Withdrawn.
-
 A ZenIP may only change status from Draft (or Rejected) to Proposed,
 when the Owner deems it is complete and there is rough consensus on the
-forums, validated by [Editors](#zenip-editors). One Editor will not suffice --
-there needs to be consensus among the Editors.
-
-A Standards Track ZenIP may only change status from Proposed to
-Implemented once the Owner provides an associated reference
-implementation, typically in the period after the network upgrade's
-specification freeze but before the implementation audit. If the Owner
-misses this deadline, the Editors or Owner(s) may choose to update the
-`Network Upgrade` header to target another upgrade, at their discretion.
+forums, validated by [Editors](#zenip-editors). One Editor will not suffice -
+there needs to be consensus among the Editors with a two-thirds majority.
 
 ZenIPs should be changed from Draft or Proposed status, to Rejected
 status, upon request by any person, if they have not made progress in
@@ -508,14 +490,19 @@ provides revisions that meaningfully address public criticism of the
 proposal, or to Proposed status if it meets the criteria required as
 described in the previous paragraph.
 
+Owners of a ZenIP may decide on their own to change the status between
+Draft and Withdrawn.
+
+A Consensus or Standards Track ZenIP may only change status from Proposed to
+Implemented once the Owner provides an associated reference
+implementation.
+
 A Consensus or Standards Track ZenIP becomes Final when its associated
-network upgrade or other protocol change is activated on Horizen's
-mainnet.
+protocol change is activated on Horizen's mainnet.
 
 A Process or Informational ZenIP may change status from Draft to Active
 when it achieves rough consensus on the forum or PR. Such a proposal is
-said to have rough consensus if it has been open to discussion on the
-forum or GitHub PR for at least one month, and no person maintains any
+said to have rough consensus if it has been open to discussion for at least one month, and no person maintains any
 unaddressed substantiated objections to it. Addressed or obstructive
 objections may be ignored/overruled by general agreement that they have
 been sufficiently addressed, but clear reasoning must be given in such
@@ -529,60 +516,46 @@ the optional Updated-by header).
 
 ### Rationale
 
-We want to define an unambiguous criteria for the Status field of BIPs, which has often been a source of confusion in similar Improvement Proposal processes. Many *X*-IPs with significant real-world use have been left as Draft or Proposed status longer than appropriate. By giving objective criteria to judge the progression of BIPs, this proposal aims to help keep the Status accurate and up-to-date.
+We want to define unambiguous criteria for the Status field of ZenIPs, which has often been a source of confusion in similar Improvement Proposal processes. Many *X*-IPs with significant real-world use have been left as Draft or Proposed status longer than appropriate. By giving objective criteria to judge the progression of ZenIPs, this proposal aims to help keep the Status accurate and up-to-date.
 
 This ZenIP does not aim to address what "should" be the basis of decisions. Such a statement, no matter how perfect in its justification, would be futile without some way to force others to use it. Opinions will always differ to some degree. The ZenIP process does not aim to be a kind of forceful "governance" of Horizen, merely to provide a collaborative repository for proposing and providing information on standards, which people may voluntarily adopt or not. It can only hope to achieve accuracy in regard to the "Status" field by striving to reflect the reality of *how things actually are*, rather than *how they should be*.
 
 ## ZenIP Comments
 
-**Which one???**
+Here we define the platform we want to use for the discussion of ZenIPs. This is important for the efficient communication and collaboration.
 
 ### Specification
 
-#### Zcash Version
-Comments from the community on the ZenIP should occur on the [Horizen
-Community Forum](https://forum.horizen.global) and the comment fields of the pull requests
-in any open ZenIPs. Editors will use these sources to judge rough
-consensus.
+Comments from the community on ZenIPs should occur in a dedicated thesis on the Kialo platform
+and the comment fields of the pull requests in any open ZenIPs.
 
-#### Bitcoin Version
+The Owner should create a thesis within the [Horizen - ZenIP Discussion](https://www.kialo.com/horizen---zenip-discussion-30633) on Kialo. To keep a consistent theme the thesis should be formulated in favor of adopting the ZenIP in question (e.g. ZenIP-X: The Zen Improvement Proposal process should be implemented).
 
-Each ZenIP should, in its preamble, link to a **public wiki page** with a summary tone of the comments on that page. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this **wiki page**. The comments page should generally only be used to post final comments for a completed ZenIP. If a ZenIP is not yet completed, reviewers should instead post on the applicable **development mailing list thread** to allow the ZenIP author(s) to address any concerns or problems pointed out by the review.
+Each ZenIP should, in its preamble, link to a Kialo discussion. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this page. The discussion on Kialo will be moderated according to the **Horizen Code of Conduct**.
+ZenIPs may also choose to list a second forum for ZenIP comments, in addition to the ZenIPs Kialo discussion. In this case, the second forum's URI should be listed below the primary wiki's URI in a separate line.
+Each substantiated argument against the ZenIP should be addressed by the author.
 
-To avoid a situation where critical ZenIP reviews may go unnoticed during this period, reviewers may, at their option, still post their review on the **comments page**, provided they first post it to the **mailing list** and plan to later remove or revise it as applicable based on the completed version. Such revisions should be made by editing the previous review and updating the timestamp. Reviews made prior to the complete version may be removed if they are no longer applicable and have not been updated in a timely manner (eg, within one month).
+After some time, the ZenIP itself may be updated with a summary tone of the comments. Summary tones may be chosen from the following, but this ZenIP does not intend to cover all possible nuances and other summaries may be used as needed:
 
-Pages must be named after the full ZenIP number (eg, "ZenIP-000") and placed in the "Comments" namespace. For example, the link for ZenIP-000 will be https://github.com/ZencashOfficial/ZenIP/wiki/Comments:ZenIP-000 .
+- No comments yet.
+- Unanimously Recommended for implementation
+- Unanimously Discourage for implementation
+- Mostly Recommended for implementation, with some Discouragement
+- Mostly Discouraged for implementation, with some Recommendation
 
-Comments posted to this wiki should use the following format:
-
-`<Your opinion> --<Your name>, <Date of posting, as YYYY-MM-DD>`
-
-BIPs may also choose to list a second forum for BIP comments, in addition to the BIPs wiki. In this case, the second forum's URI should be listed below the primary wiki's URI.
-
-After some time, the BIP itself may be updated with a summary tone of the comments. Summary tones may be chosen from the following, but this BIP does not intend to cover all possible nuances and other summaries may be used as needed:
-
-* No comments yet.
-* Unanimously Recommended for implementation
-* Unanimously Discourage for implementation
-* Mostly Recommended for implementation, with some Discouragement
-* Mostly Discouraged for implementation, with some Recommendation
-
-For example, the preamble to BIP 1 might be updated to include the line:
+For example, the preamble to ZenIP might be updated to include the line:
 
     Comments-Summary: No comments yet.
-    Comments-URI: ZencashOfficial/ZenIP/wiki/Comments:ZenIP-000
-                  https://some-other-wiki.org/ZenIP-000-Comments
+    Comments-URI: ZencashOfficial/ZenIP/wiki/Comments:ZenIP-0000
+    https://some-other-wiki.org/ZenIP-0000-Comments
 
-These fields must follow the "Discussions-To" header defined in [ZenIP Format and Structure](#zenip-format-and-structure) (if that header is not present, it should follow the position where it would be present; generally this is immediately above the Status header).
+These fields must follow the "Discussions-To" header defined in [ZenIP Format and Structure](#zenip-format-and-structure) (if that header is not present, it should follow the position where it would be present; generally this is immediately above the Status header). To avoid doubt: comments and status are unrelated metrics to judge a ZenIP, and neither should be directly influencing the other.
 
-To avoid doubt: comments and status are unrelated metrics to judge a ZenIP, and neither should be directly influencing the other.
+Editors will use these sources to judge rough consensus. Reviews made prior to the completed version may be removed if they are no longer applicable and have not been updated in a timely manner (eg, within one month).
 
 ### Rationale
 
-**todo**
-
-
-
+**TODO**
 
 ## ZenIP Licensing
 
@@ -658,12 +631,12 @@ with the rest of the ZenIP text.
 
 #### Not acceptable licenses
 
-
 All licenses not explicitly included in the above lists are not
 acceptable terms for a Horizen Improvement Proposal.
 
 ### Rationale
 
+**TODO**
 
 ## See Also
 
@@ -683,6 +656,3 @@ acceptable terms for a Horizen Improvement Proposal.
 
 [3]: [reStructuredText
     documentation](http://docutils.sourceforge.net/rst.html)
-
-[4]: [LaTeX -- a document preparation
-    system](https://www.latex-project.org/)
