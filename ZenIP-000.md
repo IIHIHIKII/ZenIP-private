@@ -152,7 +152,7 @@ submitted to the **ZenIP GitHub repository (add link)** as a pull request. The d
 must be written in ZenIP style as described below, and named with an
 alias such as `ZenIP-zentoshizenamoto-42millionzen` until the ZenIP
 Editors have assigned it a ZenIP number. Owners MUST NOT self-assign
-ZenIP numbers. The ZenIP repository contains a **TODO: ZenIP Template**.
+ZenIP numbers. The ZenIP repository contains a [ZenIP Template](ZenIP_template.md).
 
 ZenIP Owners are responsible for collecting community feedback on both
 the initial idea and the ZenIP before submitting it for review. Long open-ended discussions on forums should be
