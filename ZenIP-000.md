@@ -18,6 +18,9 @@ TODO
 
 Everything in the following document written in **bold** font was added/annotated by Jonas.
 
+**Global comments from Rob:**
+-   Make the chosen discussion tool (Kialo) modular in this doc (e.g. A section that declares the current tool, and then every other refernece in the doc to the "Current Tool" section. This should remove all but one ref to Kialo and make it easy for us to update in future if we don't like it. 
+
 * * * * *
 
 ![image](ZenIP-0000/ZenIP-0000-1.png)
@@ -234,15 +237,18 @@ of the ZenIP Process dictates that there are always at least two ZenIP
 Editors: one from the Zen Blockchain Foundation and one from
 the Horizen Community Council.
 
+Each organization has its own process for assigning its representative
+editor. 
+
 ### Adding and Removing Editors
 
 **TODO: discuss thresholds**
 
-Additional Editors may be selected by consensus among the
-current Editors. Our goal is to get benevolent organizations and institutions
-such as Universities and other non-profit organizations to participate in the
-ZenIP process as Editors. New Editors must be confirmed unanimously
-by all existing Editors.
+Additional Editors may be selected by consensus among the current 
+Editors. Our goal is to get benevolent organizations, institutions, or
+individuals that demonstrate a willingness and capacity to significantly 
+contribute to the ZenIP process as Editors. New Editors must be confirmed 
+unanimously by all existing Editors. **[ROB] Just a note that non-profits and unis have their own agency issues and agendas that might not be aligned with other stakeholders. e.g. there's no objective criteria to weigh a potentially opposing decision to mod consensus in a way that promotes business from one that promotes base science. I'd keep this general to orgs that show a commitment to improving the ecosystem. That captures unis, non-profits, for-profits, or even lone contributors who go way above and beyond.**
 
 Removing an Editor must similarly be agreed upon unanimously by all Editors
 except the Editor in question.
@@ -313,6 +319,10 @@ ZenIP for any of the following reasons:
 -   it is not authorized by the stated ZenIP Owners;
 -   it removes an Owner without their consent (unless the reason for removal
     is directly related to a breach of the Code of Conduct by that Owner).
+
+**[ROB] Two additional reasons to consider, one we should ask Dean:
+-   the ZenIP does no obvious harm [i mean this in the sense of harm to person, like we'd never consider a ZenIP that proposes we censor an ethnic minority; this is NOT meant to entrench interests of a stakeholder group, like preventing change of rewards if that's what the community wants.] 
+- An editor cannot approve a ZenIP that violates the laws of their respective jurisdiction [for Dean]**
 
 The ZenIP Editors MUST NOT unreasonably deny publication of a ZenIP
 proposal or update that does not violate any of these criteria. If they
@@ -455,6 +465,8 @@ document and a reference implementation.
     This ZenIP-0000 is an example of a Process ZenIP. **TODO: we should have one of these already to describe the current and future decision making process at ZBF i.e. how does the board function and what is its relationship with Horizen Community Council and other official bodies.PeaStew**
 
 **little bit of a chicken and egg problem. first we need to establish a ZenIP process (with ZenIP-0000) before we can add others. But generally agree that once live we should add appropriate Process ZenIPs for processes we already use/adhere to.Jonas**
+
+**[ROB] Agree, prob too early to formally define, but should start the process. No need to hold this up. Also, believe this gov structure should be explicitly defined in a sep doc and this doc simply refs.**
 
 New categories may be added by consensus (> 67%) among the ZenIP Editors.
 
