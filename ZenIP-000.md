@@ -18,9 +18,6 @@ TODO
 
 Everything in the following document written in **bold** font was added/annotated by Jonas.
 
-**Global comments from Rob:**
--   Make the chosen discussion tool (Kialo) modular in this doc (e.g. A section that declares the current tool, and then every other refernece in the doc to the "Current Tool" section. This should remove all but one ref to Kialo and make it easy for us to update in future if we don't like it. 
-
 * * * * *
 
 ![image](ZenIP-0000/ZenIP-0000-1.png)
@@ -131,7 +128,7 @@ search past discussions to see if an idea has been considered before,
 and if so, what issues arose in its progression.
 
 After investigating past work, the recommended way to proceed is by adding a thesis
-to the public [Horizen - ZenIP dicussion on Kialo](https://www.kialo.com). **TODO: Test how this works**
+to the public [Discussion Tool](#discussion-tool). **TODO: Test how this works**
 
 Vetting an idea publicly before going as far as writing a ZenIP is meant
 to save both the potential Owner and the wider community time. Asking
@@ -394,7 +391,7 @@ optional and are described below. All other headers are required.
     Owners: list of authors' names and email addresses
     (*) Discussions-To: email address
     (*) Comments-Summary: summary tone
-    Comments-URI: links to Kialo page for discussion
+    Comments-URI: links to ZenIP specific discussion
     Status: Draft | Active | Proposed | Rejected |
              Withdrawn | Final | Obsolete
     Type: Consensus | Standards Track | Informational | Process
@@ -468,6 +465,8 @@ document and a reference implementation.
 
 **[ROB] Agree, prob too early to formally define, but should start the process. No need to hold this up. Also, believe this gov structure should be explicitly defined in a sep doc and this doc simply refs.**
 
+**[Jonas] I would suggest we leave this out for now. This needs to be the first ZenIP (the egg, which obviously came first.. happy to explain why that is another time). Other processes related to the gov structure are perfect use cases for upcoming Process ZenIPs. Since Tuan already has a neat GitHub integration for the HDE website we can easily maintain those docs in two places. They will be on GitHub where they are actively being maintained. Additionally, we can include ZenIPs sorted by status (Draft, Proposed, Final) on the HDE website.**
+
 New categories may be added by consensus (> 67%) among the ZenIP Editors.
 
 ## ZenIP Status
@@ -477,8 +476,8 @@ New categories may be added by consensus (> 67%) among the ZenIP Editors.
     consideration by the community, they may set the status to
     Withdrawn.
 -   Active: Typically only used for Process/Informational ZenIPs,
-    achieved once rough consensus is reached in PR/Kialo on
-    ZenIP Draft. **TODO: if Kialo is not selected then this needs to be edited.PeaStew**
+    achieved once rough consensus is reached in PR and/or the [discussion tool](#discussion-tool) on
+    ZenIP Draft.
 -   Proposed: Typically the stage after Draft, added to a ZenIP after
     consideration, feedback, and rough consensus from the community. The
     ZenIP Editors must validate this change before it is approved.
@@ -527,9 +526,7 @@ said to have rough consensus if it has been open to discussion for at least one 
 unaddressed substantiated objections to it. Addressed or obstructive
 objections may be ignored/overruled by general agreement that they have
 been sufficiently addressed, but clear reasoning must be given in such
-circumstances. **TODO: still not clear to me if the forum is the right place, i think it reduces focus and puts the burden on the reviewers to review in both places all the time, would prefer just on github.PeaStew**
-
-**hate the forum and don't want to use it. really like kialo so far, think it could evolove into a very useful and clean discussion tool. Otherwise I agree with keeping it on GH. Dont't want to track discussions all over the place.Jonas**
+circumstances.
 
 When an Active or Final ZenIP is no longer relevant, its status may be
 changed to Obsolete. This change must also be objectively verifiable
@@ -547,15 +544,17 @@ This ZenIP does not aim to address what "should" be the basis of decisions. Such
 
 Here we define the platform we want to use for the discussion of ZenIPs. This is important for the efficient communication and collaboration.
 
-### Specification
+### Discussion Tool
 
 Comments from the community on ZenIPs should occur in a dedicated thesis on the Kialo platform
-and the comment fields of the pull requests in any open ZenIPs. **TODO: needs to be changed if Kialo is not selected**
+and the comment fields of the pull requests in any open ZenIPs.
 
 The Owner should create a thesis within the [Horizen - ZenIP Discussion](https://www.kialo.com/horizen---zenip-discussion-30633) on Kialo. To keep a consistent theme the thesis should be formulated in favor of adopting the ZenIP in question (e.g. ZenIP-X: The Zen Improvement Proposal process should be implemented).
 
-Each ZenIP should, in its preamble, link to a Kialo discussion. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this page. The discussion on Kialo will be moderated according to the **Horizen Code of Conduct**.
-ZenIPs may also choose to list a second forum for ZenIP comments, in addition to the ZenIPs Kialo discussion. In this case, the second forum's URI should be listed below the primary wiki's URI in a separate line.
+### Specification
+
+Each ZenIP should, in its preamble, link to a dedicated discussion. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this page. The discussion will be moderated according to the **Horizen Code of Conduct**.
+ZenIPs may also choose to list a second forum for ZenIP comments. In this case, the second forum's URI should be listed below the primary wiki's URI in a separate line.
 Each substantiated argument against the ZenIP should be addressed by the author.
 
 After some time, the ZenIP itself may be updated with a summary tone of the comments. Summary tones may be chosen from the following, but this ZenIP does not intend to cover all possible nuances and other summaries may be used as needed:
@@ -581,8 +580,6 @@ Editors will use these sources to judge rough consensus. Reviews made prior to t
 **TODO**
 
 ## ZenIP Licensing
-
-**TODO**
 
 ### Specification
 
