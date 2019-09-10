@@ -14,21 +14,19 @@ TODO
 -   Create/Merge ZenIP Repo
 -   setup ZenIP related email address
 -   "prepare" the forum/wiki/medium of choice for ZenIP related discussions
--   Follow through the ZenIP Process to adapt ZenIP-0000, first testrun for the process suggested.
-
-Everything in the following document written in **bold** font was added/annotated by Jonas.
+-   Follow through the ZenIP Process to adapt ZenIP-42000, first testrun for the process suggested.
 
 * * * * *
 
-![image](ZenIP-0000/ZenIP-0000-1.png)
+![image](ZenIP-42000/ZenIP-42000-1.png)
 
-# ZenIP-0000
+# ZenIP-42000
 
-    ZenIP: 0000
+    ZenIP: 42000
     Title: ZenIP Process
     Owners: Jonas Rubel, <jonas@zensystem.io>
     Discussions-To: <jonas@zensystem.io>
-    Comments-URI: [Kialo ZenIP-0000 Discussion](https://www.kialo.com/invited?token=005-75a82c99-670e-4ac4-be8d-668acc9ac917)
+    Comments-URI: [Kialo ZenIP-42000 Discussion](https://www.kialo.com/invited?token=005-75a82c99-670e-4ac4-be8d-668acc9ac917)
     Status: Draft 
     Type: Process
     Created: 2019-09-05
@@ -101,8 +99,7 @@ Dashjr with [BIP2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawik
 
 ## Copyright
 
-This ZenIP is dual-licensed under the Open Publication License and BSD 2-clause license.
-**TODO: Or MIT? Which license? - Propose we state clearly the single licence that we will accept.PeaStew**
+This ZenIP is licensed under the MIT license. **TODO: License**
 
 ## Motivation
 
@@ -129,7 +126,7 @@ search past discussions to see if an idea has been considered before,
 and if so, what issues arose in its progression.
 
 After investigating past work, the recommended way to proceed is by adding a thesis
-to the public [Horizen - ZenIP dicussion on Kialo](https://www.kialo.com). **TODO: Test how this works**
+to the public [Discussion Tool](#discussion-tool). **TODO: Test how this works**
 
 Vetting an idea publicly before going as far as writing a ZenIP is meant
 to save both the potential Owner and the wider community time. Asking
@@ -143,7 +140,8 @@ areas where Horizen is used.
 
 Once the Owner has asked the Horizen community as to whether an idea has
 any chance of acceptance, a draft ZenIP should be presented to the
-Horizen Community **TODO: Where**.
+Horizen Community.
+**TODO: To ask the community the Owner can start in our Discord**
 
 This gives the Owner a chance to flesh out the draft ZenIP to make it
 properly formatted, of high quality, and to address additional concerns
@@ -170,11 +168,10 @@ in a dedicated section below.
 For a ZenIP to be accepted it must meet certain minimum
 criteria:
 
+- It must adhere to the standards defined in this document.
 - It must be a clear and complete description of the proposed
 enhancement.
 - The enhancement must represent a net improvement.
-- The proposed implementation, if applicable, must be solid and must not
-complicate the protocol unduly. **TODO: define "solid" and "unduly", these are subjective terms. Changing to sidechains is pretty complicated, changing the mining algorithm parameters is less complicated but has a huge network effect beyond the code changes. I think there should be grades/categories of improvements (using github tags as ZCash does) rather than saying we won't accept a proposal merely because it "complicates the protocol unduly".PeaStew**
 
 The ZenIP Owner may update the draft as necessary in the git repository.
 Updates to drafts should also be submitted by the Owner as pull
@@ -184,12 +181,14 @@ requests.
 
 The ZenIP Editors currently use the following conventions when numbering ZenIPs:
 
-- if a ZenIP directly corresponds to a BIP (Bitcoin Improvement Proposal) or ZIP (Zcash Improvement Proposal), and the number doesn't clash, assign the same number; **TODO: should we just avoid those numbers entirely? perhaps just prefix our proposals withs some other number like... 42 :) for example ZenIP-42000 instead of ZenIP-000 and when we are referring to the lower numbered BIP and ZIPs we can use their number directly. This also allows our numbers to be entirely sequential which may come in handy later on. Similar conventions exist for reserving port numbers.PeaStew**
-- if it affects the consensus layer or the core protocol, assign a number in the range 200..299;
-- if it affects only higher layers but is needed for interoperability between node implementations or other parts of the ecosystem, assign a number in the range 300..399;
-- ZenIPs that should or will be deployed together will be numbered consecutively (whereever possible), and in a coherent reading order. **TODO: see above proposal for numbering which would allow consecutive all the time.PeaStew**
+- All ZenIP numbers are prefixed with a 42 and followed by four digits. E.g. his very first ZenIP has the number 42000.
+- If a ZenIP directly corresponds to a BIP (Bitcoin Improvement Proposal) or ZIP (Zcash Improvement Proposal), the same number is used, but without the prefix "42".
+- Process and Informational ZenIPs will be assigned a number in the range 42000 to 42199
+- Consensus ZenIPs will be assigned a number in the range 42200 to 42399
+- Standard Track ZenIPs will be assigned a number in the range 42400 to 42599
+- ZenIPs that should or will be deployed together will be numbered consecutively (whereever possible), and in a coherent reading order.
 
-These conventions are subject to change by consensus of the ZIP Editors.
+These conventions are subject to change by majority consensus (>50%) of the ZenIP Editors.
 
 ### Transferring ZenIP Ownership
 
@@ -225,24 +224,27 @@ The current ZenIP Editors are:
 All can be reached at <ZenIPs@horizen.global>. The current design
 of the ZenIP Process dictates that there are always at least two ZenIP
 Editors: one from the Zen Blockchain Foundation and one from
-the Horizen Community Council. 
+the Horizen Community Council.
+
+Each organization has its own process for assigning its representative
+editor. 
 
 ### Adding and Removing Editors
 
 **TODO: discuss thresholds**
 
-Additional Editors may be selected by consensus among the
-current Editors. Our goal is to get benevolent organizations and institutions
-such as Universities and other non-profit organizations to participate in the
-ZenIP process as Editors. New Editors must be confirmed unanimously
-by all existing Editors.
+Additional Editors may be selected by consensus among the current 
+Editors. Our goal is to get benevolent organizations, institutions, or
+individuals that demonstrate a willingness and capacity to significantly 
+contribute to the ZenIP process involved as Editors. New Editors must be confirmed 
+unanimously by all existing Editors.
 
 Removing an Editor must similarly be agreed upon unanimously by all Editors
-except the Editor in question.
+except for the Editor in question.
 
 ### ZenIP Editor Responsibilities and Workflow
 
-The ZenIP Editors subscribe to the [Horizen - ZenIP Discussion](https://forum.horizen.global)
+The ZenIP Editors subscribe to the [Horizen - ZenIP Discussions](#discussion-tool)
 as well as the ZenIP git repository.
 
 For each new ZenIP that comes in an Editor confirms the following:
@@ -250,12 +252,12 @@ For each new ZenIP that comes in an Editor confirms the following:
 -   Read the ZenIP to check if it is ready: sound and complete. The
     ideas must make technical sense, even if they don't seem likely to
     be accepted.
--   The title should accurately describe the content. **TODO: and if the content is updated or changed the title must also be changed to reflect those changes.PeaStew**
--   The ZenIP draft must have been sent to the [Horizen - ZenIP Discussion](https://forum.horizen.global)
-    or as a PR to the ZenIP git repository. **TODO: do people actually use the forum? I'd rather not see this get fragmented, it should just be on Github, if people need help to be able to submit these things then lets just provide that suport.PeaStew**
+-   The title should accurately describe the content.
+-   If the content is updated or changed the title must also be changed to reflect those changes.
+-   The ZenIP draft must have been sent as a PR to the ZenIP git repository.
 -   Motivation and backward compatibility (when applicable) must be
     addressed.
--   The licensing terms must be acceptable for ZenIPs. **TODO: probably best to just set the required licence type as above and be done with it, Correct me if I'm wrong but I believe the ZenIP will only ever result in FOSS software, correct? If this is not correct then we should be clear than there may be closed source software generated as a result of the process.PeaStew**
+-   The MIT license must be used. **TODO: license**
 
 If the ZenIP isn't ready, the editor will send it back to the Owner for
 revision, with specific instructions.
@@ -263,7 +265,9 @@ revision, with specific instructions.
 Once the ZenIP is ready for the repository it should be submitted as a
 pull request to the ZenIPs git repository where it may get
 further feedback. It must not contain a ZenIP number, and should be
-labelled "WIP" in the pull request. **TODO: Will we do numbering for WIP? This would help for referring to them to ensure when we are talking about WIP we can be sure we are talking about the same thing, this would also be helpful if we need to merge two similar or complimentary WIPs.PeaStew**
+labelled "WIP" in the pull request.
+
+@PeaStew: yes, see below.
 
 The ZenIP Editors will:
 
@@ -278,7 +282,7 @@ appropriate.
 The ZenIP Editors MAY reject a proposed ZenIP or update to an existing
 ZenIP for any of the following reasons:
 
--   it violates the Horizen **Code of Conduct link** ;
+-   it violates the Horizen **Code of Conduct link**;
 -   it appears too unfocused or broad;
 -   it duplicates effort in other ZenIPs without sufficient technical justification
     (however, alternative proposals to address similar or overlapping problems
@@ -288,8 +292,6 @@ ZenIP for any of the following reasons:
 -   it disregards compatibility with the existing Horizen blockchain or ecosystem;
 -   it is manifestly unimplementable;
 -   it includes bugs in the code, pseudocode, or algorithms;
--   it manifestly violates common expectations of a significant portion of the
-    Horizen community; **TODO: how do we measure this? vocal minorities rule projects more often than not, we live in outrage culture times. Plus, what about ASIC resistance as an example, that's going to be loud and controversial and adjudicating who is the largest group of outraged people will be difficult and not necessarily useful.PeaStew**
 -   it contains incorrect information about its status
 -   it is dependent on a patent that could potentially be an obstacle to
     adoption of the ZenIP;
@@ -304,8 +306,12 @@ ZenIP for any of the following reasons:
     implemented and has been in common use;
 -   it violates any specific "MUST" or "MUST NOT" rule in this document;
 -   it is not authorized by the stated ZenIP Owners;
+-   the ZenIP does obvious harm to a group of people
 -   it removes an Owner without their consent (unless the reason for removal
-    is directly related to a breach of the Code of Conduct by that Owner).
+    is directly related to a breach of the Code of Conduct by that Owner);
+-   An editor cannot approve a ZenIP that violates the laws of their respective jurisdiction.
+
+**[ROB] Two additional reasons to consider, one we should ask Dean:**
 
 The ZenIP Editors MUST NOT unreasonably deny publication of a ZenIP
 proposal or update that does not violate any of these criteria. If they
@@ -377,7 +383,7 @@ optional and are described below. All other headers are required.
     Owners: list of authors' names and email addresses
     (*) Discussions-To: email address
     (*) Comments-Summary: summary tone
-    Comments-URI: links to Kialo page for discussion
+    Comments-URI: links to ZenIP specific discussion
     Status: Draft | Active | Proposed | Rejected |
              Withdrawn | Final | Obsolete
     Type: Consensus | Standards Track | Informational | Process
@@ -445,7 +451,7 @@ document and a reference implementation.
     are typically not free to ignore them. Examples include procedures,
     guidelines, changes to the decision-making process, and changes to
     the tools or environment used in Horizen development.
-    This ZenIP-0000 is an example of a Process ZenIP. **TODO: we should have one of these already to describe the current and future decision making process at ZBF i.e. how does the board function and what is its relationship with Horizen Community Council and other official bodies.PeaStew**
+    This ZenIP-42000 is an example of a Process ZenIP.
 
 New categories may be added by consensus (> 67%) among the ZenIP Editors.
 
@@ -456,8 +462,8 @@ New categories may be added by consensus (> 67%) among the ZenIP Editors.
     consideration by the community, they may set the status to
     Withdrawn.
 -   Active: Typically only used for Process/Informational ZenIPs,
-    achieved once rough consensus is reached in PR/Kialo on
-    ZenIP Draft. **TODO: if Kialo is not selected then this needs to be edited.PeaStew**
+    achieved once rough consensus is reached in PR and/or the [discussion tool](#discussion-tool) on
+    ZenIP Draft.
 -   Proposed: Typically the stage after Draft, added to a ZenIP after
     consideration, feedback, and rough consensus from the community. The
     ZenIP Editors must validate this change before it is approved.
@@ -468,11 +474,11 @@ New categories may be added by consensus (> 67%) among the ZenIP Editors.
     reference implementation but before activation on the Horizen
     network.
 -   Final: When a Consensus or Standards Track ZenIP is both implemented
-    and activated on the Horizen network. **TODO: not sure about these terms "implemented" and "final" perhaps something like "implemented - pre-release" and "implemented - released" or similar (pre-deployment/deployed), implemented/released.PeaStew**
+    and activated on the Horizen network.
 -   Obsolete: The status when a ZenIP is no longer relevant (typically
-    when superseded or replaced by another ZenIP). 
+    when superseded or replaced by another ZenIP).
 
-![image](ZenIP-0000/ZenIP-0000-2.png)
+![image](ZenIP-42000/ZenIP-42000-2.png)
 
 More details on the status workflow in the specification below.
 
@@ -506,7 +512,7 @@ said to have rough consensus if it has been open to discussion for at least one 
 unaddressed substantiated objections to it. Addressed or obstructive
 objections may be ignored/overruled by general agreement that they have
 been sufficiently addressed, but clear reasoning must be given in such
-circumstances. **TODO: still not clear to me if the forum is the right place, i think it reduces focus and puts the burden on the reviewers to review in both places all the time, would prefer just on github.PeaStew**
+circumstances.
 
 When an Active or Final ZenIP is no longer relevant, its status may be
 changed to Obsolete. This change must also be objectively verifiable
@@ -524,15 +530,19 @@ This ZenIP does not aim to address what "should" be the basis of decisions. Such
 
 Here we define the platform we want to use for the discussion of ZenIPs. This is important for the efficient communication and collaboration.
 
-### Specification
+### Discussion Tool
 
 Comments from the community on ZenIPs should occur in a dedicated thesis on the Kialo platform
-and the comment fields of the pull requests in any open ZenIPs. **TODO: needs to be changed if Kialo is not selected**
+and the comment fields of the pull requests in any open ZenIPs.
 
 The Owner should create a thesis within the [Horizen - ZenIP Discussion](https://www.kialo.com/horizen---zenip-discussion-30633) on Kialo. To keep a consistent theme the thesis should be formulated in favor of adopting the ZenIP in question (e.g. ZenIP-X: The Zen Improvement Proposal process should be implemented).
 
-Each ZenIP should, in its preamble, link to a Kialo discussion. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this page. The discussion on Kialo will be moderated according to the **Horizen Code of Conduct**.
-ZenIPs may also choose to list a second forum for ZenIP comments, in addition to the ZenIPs Kialo discussion. In this case, the second forum's URI should be listed below the primary wiki's URI in a separate line.
+**TODO: further specify how tool is to be used. Add link to some guide**
+
+### Specification
+
+Each ZenIP should, in its preamble, link to a dedicated discussion. Reviewers of the ZenIP who consider themselves qualified, should post their own comments on this page. The discussion will be moderated according to the **Horizen Code of Conduct**.
+ZenIPs may also choose to list a second forum for ZenIP comments. In this case, the second forum's URI should be listed below the primary wiki's URI in a separate line.
 Each substantiated argument against the ZenIP should be addressed by the author.
 
 After some time, the ZenIP itself may be updated with a summary tone of the comments. Summary tones may be chosen from the following, but this ZenIP does not intend to cover all possible nuances and other summaries may be used as needed:
@@ -546,8 +556,8 @@ After some time, the ZenIP itself may be updated with a summary tone of the comm
 For example, the preamble to ZenIP might be updated to include the line:
 
     Comments-Summary: No comments yet.
-    Comments-URI: ZencashOfficial/ZenIP/wiki/Comments:ZenIP-0000
-    https://some-other-wiki.org/ZenIP-0000-Comments
+    Comments-URI: Horizen-Discussion-Tool/Comments:ZenIP-42000
+    https://some-other-wiki.org/ZenIP-42000-Comments
 
 These fields must follow the "Discussions-To" header defined in [ZenIP Format and Structure](#zenip-format-and-structure) (if that header is not present, it should follow the position where it would be present; generally this is immediately above the Status header). To avoid doubt: comments and status are unrelated metrics to judge a ZenIP, and neither should be directly influencing the other.
 
@@ -558,8 +568,6 @@ Editors will use these sources to judge rough consensus. Reviews made prior to t
 **TODO**
 
 ## ZenIP Licensing
-
-**TODO**
 
 ### Specification
 
@@ -593,6 +601,8 @@ to* at least one acceptable license. In this case, only the acceptable
 license(s) should be listed in the License header.
 
 **TODO: I do believe this will become a problem to manage as it is in other OSS projects, unless we are using other's code which already has a licence and terms I believe we should set a specific ONE licence for things generated by or for us**
+
+**Totally agree, need to figure out who needs to make this decision. I'd also like to just say: use MIT, done. Jonas**
 
 #### Recommended Licenses
 
