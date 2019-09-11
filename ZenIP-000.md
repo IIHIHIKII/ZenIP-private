@@ -97,6 +97,10 @@ with [zip-0000](https://github.com/zcash/zips/blob/master/zip-0000.rst).
 They themselves based their document partly on the work done by Luke
 Dashjr with [BIP2](https://github.com/bitcoin/bips/blob/master/bip-0002.mediawiki).
 
+## Copyright
+
+This ZenIP is licensed under the MIT license. **TODO: License**
+
 ## Motivation
 
 It has been the stated goal of Horizen from the very beginning to build a decentralized platform, where not just the infrastructure is distributed, but also the funding and decision making. Part of the Horizen block subsidy goes to the Zen Blockchain Foundation treasury (at the time of writing - block 571074 - 20%), from where it get's distributed to fund the development of the protocol, the sidechain implementation, marketing as well as business development.
@@ -532,6 +536,10 @@ Comments from the community on ZenIPs should occur in a dedicated thesis on the 
 and the comment fields of the pull requests in any open ZenIPs.
 
 The Owner should create a thesis within the [Horizen - ZenIP Discussion](https://www.kialo.com/horizen---zenip-discussion-30633) on Kialo. To keep a consistent theme the thesis should be formulated in favor of adopting the ZenIP in question (e.g. ZenIP-X: The Zen Improvement Proposal process should be implemented).
+
+**[Jonas] It seems to me it would make sense to separate the discussion this way: General pro/con discussion well suited for Kialo. Once a ZenIP is accepted (status: proposed) implementation details should be discussed in GitHub Issue.**
+
+
 
 **TODO: further specify how tool is to be used. Add link to some guide**
 
